@@ -6,6 +6,21 @@
     margin: auto;
 }
 
+a {
+    display: block;
+    padding: 0 10px;
+    color: #000;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    width: 150px;
+}
+
+a:hover {
+    background-color: darkgray;
+}
+
 
 /******************** style dropdown ******************/
 
@@ -22,20 +37,6 @@
 
 .nav-dropdown ul li {
     display: inline-block;
-}
-
-.nav-dropdown a {
-    display: block;
-    padding: 0 10px;
-    color: #000;
-    font-size: 20px;
-    line-height: 60px;
-    text-decoration: none;
-    background-color: #f8f9fa;
-}
-
-.nav-dropdown a:hover {
-    background-color: darkgray;
 }
 
 
@@ -59,7 +60,7 @@
 /* Fisrt Tier Dropdown */
 
 .nav-dropdown ul ul li {
-    width: 170px;
+    width: 150px;
     float: none;
     display: list-item;
     position: relative;
@@ -71,5 +72,65 @@
 .nav-dropdown ul ul ul li {
     position: relative;
     top: -60px;
-    left: 170px;
+    left: 150px;
+}
+
+
+/************* style sidebar ************/
+
+.sidebar {
+    position: fixed;
+    z-index: 9999;
+}
+
+.sidebar li {
+    display: flex;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+
+/* Hide Dropdowns by Default */
+
+.sidebar ul ul {
+    display: none;
+    /* the height of the main .nav-dropdown */
+}
+
+
+/* Display Dropdowns on Hover */
+
+.sidebar ul li:hover>ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 150px;
+}
+
+.sidebar ul li:hover>ul ul {
+    left: 0;
+}
+
+
+/* Fisrt Tier Dropdown */
+
+.sidebar ul ul li {
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+
+/* Second, Third and more Tiers	*/
+
+.sidebar ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 150px;
 }
