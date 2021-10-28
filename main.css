@@ -1,5 +1,6 @@
 .card_presentation,
-.card_formulaire {
+.card_formulaire,
+.card_before_start {
     width: 700px;
     border-radius: 15px;
     margin: auto;
