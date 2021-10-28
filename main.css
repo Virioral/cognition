@@ -10,11 +10,11 @@ a {
     display: block;
     padding: 0 10px;
     color: #000;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 60px;
     text-decoration: none;
     background-color: #f8f9fa;
-    width: 150px;
+    width: 250px;
 }
 
 a:hover {
@@ -60,7 +60,7 @@ a:hover {
 /* Fisrt Tier Dropdown */
 
 .nav-dropdown ul ul li {
-    width: 150px;
+    width: 250px;
     float: none;
     display: list-item;
     position: relative;
@@ -72,7 +72,7 @@ a:hover {
 .nav-dropdown ul ul ul li {
     position: relative;
     top: -60px;
-    left: 150px;
+    left: 250px;
 }
 
 
@@ -109,7 +109,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 150px;
+    left: 250px;
 }
 
 .sidebar ul li:hover>ul ul {
@@ -120,7 +120,7 @@ a:hover {
 /* Fisrt Tier Dropdown */
 
 .sidebar ul ul li {
-    width: 150px;
+    width: 250px;
     float: none;
     display: list-item;
     position: relative;
@@ -132,5 +132,5 @@ a:hover {
 .sidebar ul ul ul li {
     position: relative;
     top: -60px;
-    left: 150px;
+    left: 250px;
 }
