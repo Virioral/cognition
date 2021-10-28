@@ -8,7 +8,7 @@ $('document').ready(function() {
         $('.card_presentation').removeClass('d-none');
     });
     $('.before_start').on('click', function() {
-        $('.card_formulaire').addClass('d-none');
+        $('.card_presentation').addClass('d-none');
         $('.card_before_start').removeClass('d-none');
     });
 
