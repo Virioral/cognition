@@ -1,0 +1,74 @@
+.card_presentation,
+.card_formulaire {
+    width: 700px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+
+/******************** style dropdown ******************/
+
+.nav-dropdown {
+    color: #000000;
+}
+
+.nav-dropdown ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.nav-dropdown ul li {
+    display: inline-block;
+}
+
+.nav-dropdown a {
+    display: block;
+    padding: 0 10px;
+    color: #000;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+.nav-dropdown a:hover {
+    background-color: darkgray;
+}
+
+
+/* Hide Dropdowns by Default */
+
+.nav-dropdown ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    /* the height of the main .nav-dropdown */
+}
+
+
+/* Display Dropdowns on Hover */
+
+.nav-dropdown ul li:hover>ul {
+    display: inherit;
+}
+
+
+/* Fisrt Tier Dropdown */
+
+.nav-dropdown ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+
+/* Second, Third and more Tiers	*/
+
+.nav-dropdown ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}

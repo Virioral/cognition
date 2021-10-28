@@ -1,0 +1,263 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+
+</head>
+
+<body>
+    <div class='card card_formulaire p-5'>
+        <form>
+            <div class='d-flex my-2'>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="civilite" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Madame
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="civilite" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Monsieur
+                    </label>
+                </div>
+            </div>
+            <select class="form-select my-2" name="tranche_age" aria-label="Tranche d'âge">
+            <option selected>Tranche d'âge</option>
+            <option value="1">Moins de 18 ans</option>
+            <option value="2">18-24 ans</option>
+            <option value="3">24-30 ans</option>
+            <option value="3">30-40 ans</option>
+            <option value="3">plus de 40 ans</option>
+          </select>
+            <select class="form-select my-2" name="frequence_utilisation" aria-label="Tranche d'âge">
+            <option selected>Fréquence d'utilisation</option>
+            <option value="1">Régulier (plus d'une fois par jour)</option>
+            <option value="2">Occasionnel (2-3 fois par semaine)</option>
+            <option value="3">Exceptionnel (1 fois ou moins par semaine)</option>
+          </select>
+            <input class='my-2' name="rgpd" type="checkbox" name="rgpd" id='rgpd'>
+            <label for="rgpd">Accepter les conditions d'utilisations</label>
+            <div class="d-flex flex-column align-items-center">
+                <button type="submit" class="submit my-2 btn-primary">Envoyer</button>
+            </div>
+        </form>
+    </div>
+
+    <div class='card card_presentation d-none'>
+        <div class="card-body">
+            <h5 class="card-title">
+                Bonjour, <br> Vous êtes sur le point de participer a une expérience unique.
+            </h5>
+            <h6>
+                Déroulement :
+            </h6>
+
+            <p class="card-text">
+                Cette expérience ce décompose en six étapes, chacune chronométrées. Au début de chaque étape, une donnée vous sera communiqué (exemple : poire). Votre mission si vous l’accepter sera de retrouver la donnée communiqué dans chacun des six menu qui vous
+                seront présenté (un menu différents par étape). Des lorsque vous cliquerez sur « commencer », le chronométré se déclenchera et vous devrait retrouver votre donnée. Une fois que vous aurez cliqué sur la donnée dans le menu le chronomètre
+                sera réinitialisé et vous passerez a l’étape suivante.
+            </p>
+            <a href="#" class="before_start btn btn-primary">J'AI COMPRIS !</a>
+        </div>
+    </div>
+
+    <div class='card card_before_start d-none'>
+
+        <h5 class="card-title">
+            L'élément à trouver sera :
+        </h5>
+        <h3>
+            Poire
+        </h3>
+
+        <a href="#" class="start_game btn btn-primary">Commencer</a>
+    </div>
+
+    <section class='etape1 d-none'>
+        <nav class="navbar navbar-light bg-light nav-dropdown">
+            <ul>
+                <li><a href="#">Web Design <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Resources  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Links  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tutorials <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Web Design <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Resources  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Links  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tutorials <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Web Design <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Resources  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Links  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tutorials <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Web Design <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Resources  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Links  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tutorials <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Web Design <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Resources  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Links  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tutorials <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Web Design <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Resources  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Links  <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tutorials <i class="fas fa-caret-right"></i></a>
+                            <ul>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">jQuery</a></li>
+                                <li><a href="#">Other</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </section> -->
+</body>
+
+</html>
