@@ -1,19 +1,43 @@
 let __data = {};
-$('document').ready(function() {
+
+function submitForm(){
     $('form').on('submit', function(e) {
         e.preventDefault();
         const formData = new FormData(e.target);
         formData.forEach((value, key) => __data[key] = value);
-        $('.card_formulaire').addClass('d-none');
-        $('.card_presentation').removeClass('d-none');
+        nextStep('card_formulaire','card_presentation');
+        beforeStart();
     });
-    $('.before_start').on('click', function() {
-        $('.card_presentation').addClass('d-none');
-        $('.card_before_start').removeClass('d-none');
-    });
+}
 
+function beforeStart(){
+    $('.before_start').on('click', function() {
+        nextStep('card_presentation','card_before_start');
+    });
+    startGame();
+}
+
+function startGame(){
     $('.start_game').on('click', function() {
-        $('.card_before_start').addClass('d-none');
-        $('.etape1').removeClass('d-none');
+        nextStep('card_before_start','etape1');
     })
+}
+
+function nextStep(oldstep,newstep){
+    $('.' + oldstep).addClass('d-none');
+    $('.' + newstep).removeClass('d-none');
+}
+
+
+function initTimer(){
+}
+
+function saveTimer(){
+}
+
+
+$('document').ready(function() {
+    submitForm();
+    console.log(__data);
+      
 })
