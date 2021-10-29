@@ -2,8 +2,11 @@ let __data = {'time' : {'etape1' : '','etape2' : '','etape3' : '','etape4' : '',
 let timer = null
 let seconde = 0;
 let minute = 0;
-let objectToFind = ['Poire','poire','poire','poire','poire','poire'];
-let etapes = ['etape1','etape2','etape3','etape4','etape5','etape6'];
+//let objectToFind = ['Poire','test','poire','poire','poire','poire'];
+//let etapes = ['etape1','etape2','etape3','etape4','etape5','etape6'];
+let etapes = ['etape1','etape2'];
+let objectToFind = ['Poire','test'];
+
 
 function submitForm() {
     $('form').on('submit', function(e) {
@@ -25,9 +28,9 @@ function beforeStart() {
 
 function startGame() {
     $('.start_game').on('click', function() {
-        console.log(etapes[0]);
         nextStep('card_before_start',etapes[0]);
         seconde = 0;
+        initMenu();
         initTimer();
     })   
 }
@@ -50,11 +53,9 @@ function initTimer(){
 }
 
 function saveTimer(name){
-    console.log("saveTimer = "+ seconde + "secondes" );
     __data['time'][name]=60*minute + seconde;
     clearInterval(timer);
     seconde = 0;
-    console.log(__data);
 }
 
 function checkclick(elem) {
@@ -62,11 +63,13 @@ function checkclick(elem) {
         saveTimer(elem.closest("section").attr('class'));
         objectToFind.shift();
         etapes.shift();
+        console.log($(objectToFind).empty());
         if($(objectToFind).empty()){
             displayObjectToFind();
             nextStep('etape1','card_before_start');
         }
         else{
+            console.log('salut');
             displayEnd();
         }
     }
@@ -76,12 +79,22 @@ function displayObjectToFind(){
     $('.objectToFind').text(objectToFind[0])
 }
 
+function displayEnd(){
+    $('.etapes2').addClass('d-none');
+    $('.end').removeClass('d-none');
+    console.log(__data);
+}
+
+function initMenu(){
+    console.log($('section nav a'));
+    $('body').on('click', 'a', function() {
+        checkclick($(this));
+    });
+}
+
 
 $('document').ready(function() {
     submitForm();
-    $('section nav a').on('click', function() {
-        checkclick($(this));
-    });
 })
 
 
