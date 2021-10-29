@@ -24,11 +24,11 @@ function beforeStart() {
 }
 
 function startGame() {
-    createMenu(etapes[0], 'pulldown', __init_data);
     $('.start_game').on('click', function() {
         console.log(etapes[0]);
         nextStep('card_before_start', etapes[0]);
         seconde = 0;
+        initMenu(etapes[0]);
         initTimer();
     })
 }
@@ -51,11 +51,9 @@ function initTimer() {
 }
 
 function saveTimer(name) {
-    console.log("saveTimer = " + seconde + "secondes");
     __data['time'][name] = 60 * minute + seconde;
     clearInterval(timer);
     seconde = 0;
-    console.log(__data);
 }
 
 function checkclick(elem) {
@@ -76,12 +74,21 @@ function displayObjectToFind() {
     $('.objectToFind').text(objectToFind[0])
 }
 
+function displayEnd() {
+    $('.etapes2').addClass('d-none');
+    $('.end').removeClass('d-none');
+    console.log(__data);
+}
+
+function initMenu(step) {
+    createMenu(step, 'pulldown', __init_data);
+    $('body').on('click', 'a', function() {
+        checkclick($(this));
+    });
+}
 
 $('document').ready(function() {
     submitForm();
-    $('section nav a').on('click', function() {
-        checkclick($(this));
-    });
 })
 
 function createMenu(step = 'etape1', type = 'sidebar', data) {
