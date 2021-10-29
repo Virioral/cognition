@@ -70,284 +70,205 @@ var __init_data = {
             ]
 
         },
-        "Boissons2": {
-            "Cafés et boissons chaudes": [
-                "Cafés et boissons chaudes Bio",
-                "Cafés en dosettes",
-                "Cafés moulus ou en grains",
-                "Cafés solubles et chicorés",
-                "Poudres chocolats",
-                "Thés",
-                "Infusions et tisanes",
-                "Thés glacés"
+        "Épicerie sucrée": {
+            "Petit déjeuner": [
+                "Petit déjeuner Bio",
+                "Céréales, muesli, avoine",
+                "Pâtes à tartiner",
+                "Confitures",
+                "Miel, sirops d'érables et agaves",
+                "Pains de mie",
+                "Biscottes et pains grillés",
+                "Biscuits petit - déjeuner",
+                "Barres céréalières",
             ],
-            "Eaux et laits": [
-                "Eaux et laits",
-                "Eaux plates",
-                "Eaux gazeuses",
-                "Eaux arômatisées",
-                "Laits entiers",
-                "Laits demi-écrémés",
-                "Laits écrémés",
-                "Laits concentrés, spéciaux et arômatisés",
-                "Laits frais"
+            "Biscuits Gouters": [
+                "Biscuits Goûters Bio",
+                "Biscuits natures",
+                "Biscuits au chocolat",
+                "Biscuits aux fruits et arômatisés",
+                "Assortiments",
+                "Biscuits petit - déjeuner",
+                "Biscottes et pains grillés",
+                "Barres céréalières",
+                "Barres chocolatées",
             ],
-            "Jus de fruits et légumes": [
-                "Jus de fruits et légumes",
-                "Jus d'orange",
-                "Jus de pomme",
-                "Jus de pamplemousse",
-                "Jus de fruits exotiques",
-                "Jus multi-fruits",
-                "Autres jus de fruits",
-                "Jus de fruits et légumes frais",
-                "Jus de légumes",
-                "Boissons soja et céréales",
-                "Jus de fruits et légumes Bio"
+            "Pâtisseries industrielles": [
+                "Pâtisseries industrielles Bio",
+                "Quatres - Quarts et madeleines",
+                "Cakes et pains d 'épices",
+                "Gateaux et marbrés",
+                "Crèpes et galettes",
+                "Viennoiseries",
             ],
-            "Sirops et boissons aux fruits": [
-                "Sirops",
-                "Concentrés",
-                "Eaux arômatisées",
-                "Thés glacés",
-                "Boissons plates aux fruits"
+            "Chocolats et confiserie": [
+                "Chocolats et confiseries Bio",
+                "Bonbons",
+                "Confiseries au chocolat",
+                "Chewing Gum",
+                "Tablettes de chocolat pâtissier",
+                "Tablettes de chocolat noir",
+                "Tablettes de chocolat au lait",
+                "Tablettes de chocolat blanc",
             ],
-            "Colas et boissons gazeuses": [
-                "Colas",
-                "Limonades, limes et tonics",
-                "Boissons gazeuses aux fruits",
-                "Boissons énergisantes"
-            ],
-            "Alcools et apéritifs": [
-                "Alcools et apéritifs",
-                "Whiskies",
-                "Alcools blancs et cocktails",
-                "Apéritifs et anisés",
-                "Liqueurs et crèmes",
-                "Digestifs",
-                "Apéritifs sans alcool"
-            ],
-            "Bières": [
-                "Cave à bières",
-                "Bières blondes",
-                "Bières du monde et aromatisées",
-                "Bières ambrées et brunes",
-                "Bières d'Abbaye et de dégustation",
-                "Bières blanches et fruitées",
-                "Bières sans alcool",
-                "Fûts pression",
-                "Panachés"
+            "Desserts sucre et farine": [
+                "Desserts sucre et farine",
+                "Desserts sucre et farine Bio",
+                "Crèmes dessert",
+                "Desserts fruitiers et compotes",
+                "Farines et levures",
+                "Sucres et édulcorants",
+                "Fruits au sirop",
+                "Aides à la pâtisserie",
+                "Tablettes de chocolat pâtissier",
             ]
 
         },
-        "Boissons3": {
-            "Cafés et boissons chaudes": [
-                "Cafés et boissons chaudes Bio",
-                "Cafés en dosettes",
-                "Cafés moulus ou en grains",
-                "Cafés solubles et chicorés",
-                "Poudres chocolats",
-                "Thés",
-                "Infusions et tisanes",
-                "Thés glacés"
+        "Épicerie salée": {
+            "Apéritif": [
+                "Apéritif Bio",
+                "Chips",
+                "Tuiles, tortillas",
+                "Cacahuètes, pistaches",
+                "Autres biscuits salés",
+                "Saucisses cocktails",
+                "Cornichons, olives…",
+                "Tartinable",
             ],
-            "Eaux et laits": [
-                "Eaux et laits",
-                "Eaux plates",
-                "Eaux gazeuses",
-                "Eaux arômatisées",
-                "Laits entiers",
-                "Laits demi-écrémés",
-                "Laits écrémés",
-                "Laits concentrés, spéciaux et arômatisés",
-                "Laits frais"
+            "Soupes et croutons": [
+                "Soupes et croûtons Bio",
+                "En brique",
+                "Déshydratée",
+                "Soupes de poissons, rouille",
+                "Croutons",
             ],
-            "Jus de fruits et légumes": [
-                "Jus de fruits et légumes",
-                "Jus d'orange",
-                "Jus de pomme",
-                "Jus de pamplemousse",
-                "Jus de fruits exotiques",
-                "Jus multi-fruits",
-                "Autres jus de fruits",
-                "Jus de fruits et légumes frais",
-                "Jus de légumes",
-                "Boissons soja et céréales",
-                "Jus de fruits et légumes Bio"
+            "Pâtes, riz, purées et sauces": [
+                "Pâtes, riz, purées et sauces Bio",
+                "Pâtes",
+                "Riz",
+                "Purées et polenta",
+                "Couscous, blés, céréales",
+                "Légumes secs",
+                "Sauces tomates, bolognaises, napolitaines…"
             ],
-            "Sirops et boissons aux fruits": [
-                "Sirops",
-                "Concentrés",
-                "Eaux arômatisées",
-                "Thés glacés",
-                "Boissons plates aux fruits"
+            "Plats cuisinés et cuisine du monde": [
+                "Plats cuisinés et cuisine du monde ,Bio",
+                "Saveurs de nos régions",
+                "Saveurs Méditerranéennes",
+                "Saveurs d 'Asie",
+                "Saveurs d 'Amérique Latine",
+                "Ravioli et cannellonis",
+                "Plats individuels",
             ],
-            "Colas et boissons gazeuses": [
-                "Colas",
-                "Limonades, limes et tonics",
-                "Boissons gazeuses aux fruits",
-                "Boissons énergisantes"
+            "Conserves et bocaux": [
+                "Conserves et bocaux Bio",
+                "Conserves de légumes",
+                "Conserves de poissons",
+                "Conserves de viandes",
+                "Pâtés et terrines",
             ],
-            "Alcools et apéritifs": [
-                "Alcools et apéritifs",
-                "Whiskies",
-                "Alcools blancs et cocktails",
-                "Apéritifs et anisés",
-                "Liqueurs et crèmes",
-                "Digestifs",
-                "Apéritifs sans alcool"
+            "Condiments, bouillons et sauces": [
+                "Condiments, bouillons et sauces Bio",
+                "Huiles",
+                "Vinaigres et vinaigrettes",
+                "Sels et poivres",
+                "Herbes et épices",
+                "Cornichons, olives…",
+                "Moutardes, mayonnaise, ketchup, béarnaises",
+                "Sauces tomates, bolognaises, napolitaines",
+                "Fécules et chapelure",
+                "Bouillons et fond de sauce",
+                "Papillottes et sachets cuissons",
+                "Sauces en sachet et briques",
+                "Jus de citron",
             ],
-            "Bières": [
-                "Cave à bières",
-                "Bières blondes",
-                "Bières du monde et aromatisées",
-                "Bières ambrées et brunes",
-                "Bières d'Abbaye et de dégustation",
-                "Bières blanches et fruitées",
-                "Bières sans alcool",
-                "Fûts pression",
-                "Panachés"
-            ]
 
         },
-        "Boissons4": {
-            "Cafés et boissons chaudes": [
-                "Cafés et boissons chaudes Bio",
-                "Cafés en dosettes",
-                "Cafés moulus ou en grains",
-                "Cafés solubles et chicorés",
-                "Poudres chocolats",
-                "Thés",
-                "Infusions et tisanes",
-                "Thés glacés"
-            ],
-            "Eaux et laits": [
-                "Eaux et laits",
-                "Eaux plates",
-                "Eaux gazeuses",
-                "Eaux arômatisées",
+        "Produits laitiers": {
+            "Laits et oeufs": [
+                "Laits et oeufs Bio",
                 "Laits entiers",
-                "Laits demi-écrémés",
+                "Laits demi - écrémés",
                 "Laits écrémés",
                 "Laits concentrés, spéciaux et arômatisés",
-                "Laits frais"
+                "Laits frais",
+                "Boissons lactées",
+                "Oeufs",
             ],
-            "Jus de fruits et légumes": [
-                "Jus de fruits et légumes",
-                "Jus d'orange",
-                "Jus de pomme",
-                "Jus de pamplemousse",
-                "Jus de fruits exotiques",
-                "Jus multi-fruits",
-                "Autres jus de fruits",
-                "Jus de fruits et légumes frais",
-                "Jus de légumes",
-                "Boissons soja et céréales",
-                "Jus de fruits et légumes Bio"
+            "Beurres et crèmes": [
+                "Beurres et crèmes Bio",
+                "Beurres",
+                "Margarines et matières grasses",
+                "Crèmes fraiches, fouettées et chantilly",
+                "Crèmes et sauces",
             ],
-            "Sirops et boissons aux fruits": [
-                "Sirops",
-                "Concentrés",
-                "Eaux arômatisées",
-                "Thés glacés",
-                "Boissons plates aux fruits"
+            "Fromage et plateaux": [
+                "Fromages et plateaux Bio",
+                "Fromages à la coupe",
+                "Camemberts, Coulommiers, Bries et Spécialités",
+                "Chèvres et Brebis",
+                "Bleus et Roqueforts",
+                "Emmental, Comté, Mimolette, St Paulin",
+                "Fromage local",
             ],
-            "Colas et boissons gazeuses": [
-                "Colas",
-                "Limonades, limes et tonics",
-                "Boissons gazeuses aux fruits",
-                "Boissons énergisantes"
+            "Fromages cuisine et snacking": [
+                "Fromages cuisine et snacking Bio",
+                "Fromage râpés",
+                "Fromage pour salades et apéritifs",
+                "Fromages à consommer chaud",
+                "Fromages pour enfants",
+                "Fromages pour sandwichs burgers",
+                "Fromages à tartiner",
             ],
-            "Alcools et apéritifs": [
-                "Alcools et apéritifs",
-                "Whiskies",
-                "Alcools blancs et cocktails",
-                "Apéritifs et anisés",
-                "Liqueurs et crèmes",
-                "Digestifs",
-                "Apéritifs sans alcool"
+            "Yaourts et desserts lactés": [
+                "Yaourts et desserts bio",
+                "Yaourts aux fruits et aromatisés",
+                "Yaourts natures et fromages blancs",
+                "Yaourts enfants",
+                "Compotes",
+                "Végétal",
+                "Hyper protéinés",
+                "Chèvres et Brebis",
+                "Crèmes desserts",
+                "Mousses et liégeois",
+                "Crèmes caramels, aux œufs, gâteaux de riz et semoules",
+                "Desserts pâtissiers",
+                "Allégés et bifidus",
             ],
-            "Bières": [
-                "Cave à bières",
-                "Bières blondes",
-                "Bières du monde et aromatisées",
-                "Bières ambrées et brunes",
-                "Bières d'Abbaye et de dégustation",
-                "Bières blanches et fruitées",
-                "Bières sans alcool",
-                "Fûts pression",
-                "Panachés"
-            ]
-
         },
-        "Boissons5": {
-            "Cafés et boissons chaudes": [
-                "Cafés et boissons chaudes Bio",
-                "Cafés en dosettes",
-                "Cafés moulus ou en grains",
-                "Cafés solubles et chicorés",
-                "Poudres chocolats",
-                "Thés",
-                "Infusions et tisanes",
-                "Thés glacés"
+        "Pains et pâtisserie": {
+            "Boulangerie et viennoiserie": [
+                "Pains et pâtisseries Bio",
+                "Pains",
+                "Pains précuits",
+                "Viennoiseries fraiches",
             ],
-            "Eaux et laits": [
-                "Eaux et laits",
-                "Eaux plates",
-                "Eaux gazeuses",
-                "Eaux arômatisées",
-                "Laits entiers",
-                "Laits demi-écrémés",
-                "Laits écrémés",
-                "Laits concentrés, spéciaux et arômatisés",
-                "Laits frais"
+            "Pains de mie et pains grillés": [
+                "Pains de mie et pains grillés Bio",
+                "Pains de mie",
+                "Pains à hamburger, bagels…",
+                "Canapés, toasts…",
+                "Biscottes et pains grillés",
             ],
-            "Jus de fruits et légumes": [
-                "Jus de fruits et légumes",
-                "Jus d'orange",
-                "Jus de pomme",
-                "Jus de pamplemousse",
-                "Jus de fruits exotiques",
-                "Jus multi-fruits",
-                "Autres jus de fruits",
-                "Jus de fruits et légumes frais",
-                "Jus de légumes",
-                "Boissons soja et céréales",
-                "Jus de fruits et légumes Bio"
+            "Pâtisseries fraîches": [
+                "Entremets",
+                "Tartes",
+                "Gâteaux, cakes et Pains d 'épices",
+                "Brioches et couronnes",
+                "Pâtisseries individuelles",
+                "Verrines, crèmes, mousses",
+                "Biscuits",
+                "Confiseries",
+                "Aide à la pâtisserie",
             ],
-            "Sirops et boissons aux fruits": [
-                "Sirops",
-                "Concentrés",
-                "Eaux arômatisées",
-                "Thés glacés",
-                "Boissons plates aux fruits"
+            "Pâtisseries moelleuses": [
+                "Pâtisseries moelleuses Bio",
+                "Cakes et pains d 'épices",
+                "Crèpes et galettes",
+                "Viennoiseries",
+                "Quatres - Quarts et madeleines",
+                "Gateaux et marbrés",
             ],
-            "Colas et boissons gazeuses": [
-                "Colas",
-                "Limonades, limes et tonics",
-                "Boissons gazeuses aux fruits",
-                "Boissons énergisantes"
-            ],
-            "Alcools et apéritifs": [
-                "Alcools et apéritifs",
-                "Whiskies",
-                "Alcools blancs et cocktails",
-                "Apéritifs et anisés",
-                "Liqueurs et crèmes",
-                "Digestifs",
-                "Apéritifs sans alcool"
-            ],
-            "Bières": [
-                "Cave à bières",
-                "Bières blondes",
-                "Bières du monde et aromatisées",
-                "Bières ambrées et brunes",
-                "Bières d'Abbaye et de dégustation",
-                "Bières blanches et fruitées",
-                "Bières sans alcool",
-                "Fûts pression",
-                "Panachés"
-            ]
 
         }
     }

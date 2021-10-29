@@ -2,8 +2,10 @@ let __data = { 'time': { 'etape1': '', 'etape2': '', 'etape3': '', 'etape4': '',
 let timer = null
 let seconde = 0;
 let minute = 0;
-let objectToFind = ['Eaux plates', 'poire', 'poire', 'poire', 'poire', 'poire'];
+let objectToFind = ['Eaux plates', 'Colas', 'poire', 'poire', 'poire', 'poire'];
 let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
+
+//save taille ecran + type, position => position aleatoire entre chaque participants 
 
 function submitForm() {
     $('form').on('submit', function(e) {
