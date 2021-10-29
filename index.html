@@ -10,6 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
     <link rel="stylesheet" href="./src/css/main.css">
     <script src="./src/data/data.js"></script>
     <script src="./src/js/main.js"></script>
@@ -21,34 +24,37 @@
         <form>
             <div class='d-flex my-2'>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="civilite" value="Madame" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="civilite" value="Madame" id="btnRadioCivilite1">
+                    <label class="form-check-label" for="btnRadioCivilite1">
                       Madame
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="civilite" value="Monsieur" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" name="civilite" value="Monsieur" id="btnRadioCivilite2" checked>
+                    <label class="form-check-label" for="btnRadioCivilite2">
                       Monsieur
                     </label>
                 </div>
             </div>
             <select class="form-select my-2" name="tranche_age" aria-label="Tranche d'âge">
-            <option selected>Tranche d'âge</option>
-            <option value="1">Moins de 18 ans</option>
-            <option value="2">18-24 ans</option>
-            <option value="3">24-30 ans</option>
-            <option value="3">30-40 ans</option>
-            <option value="3">plus de 40 ans</option>
-          </select>
+                <option selected value="">Tranche d'âge</option>
+                <option value="1">Moins de 18 ans</option>
+                <option value="2">18-24 ans</option>
+                <option value="3">24-30 ans</option>
+                <option value="3">30-40 ans</option>
+                <option value="3">plus de 40 ans</option>
+            </select>
             <select class="form-select my-2" name="frequence_utilisation" aria-label="Tranche d'âge">
-            <option selected>Fréquence d'utilisation</option>
-            <option value="1">Régulier (plus d'une fois par jour)</option>
-            <option value="2">Occasionnel (2-3 fois par semaine)</option>
-            <option value="3">Exceptionnel (1 fois ou moins par semaine)</option>
-          </select>
-            <input class='my-2' name="rgpd" type="checkbox" name="rgpd" id='rgpd'>
-            <label for="rgpd">Accepter les conditions d'utilisations</label>
+                <option selected value="">Fréquence d'utilisation</option>
+                <option value="1">Régulier (plus d'une fois par jour)</option>
+                <option value="2">Occasionnel (2-3 fois par semaine)</option>
+                <option value="3">Exceptionnel (1 fois ou moins par semaine)</option>
+            </select>
+            <div>
+                <input class='my-2' name="rgpd" type="checkbox" name="rgpd" id='rgpd'>
+                <label for="rgpd">Accepter les conditions d'utilisations</label>
+            </div>
+
             <div class="d-flex flex-column align-items-center">
                 <button type="submit" class="submit my-2 btn-primary">Envoyer</button>
             </div>

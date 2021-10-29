@@ -10,15 +10,6 @@ let etapes = ['etape1', 'etape2'];
 
 //save taille ecran + type, position => position aleatoire entre chaque participants 
 
-function submitForm() {
-    $('form').on('submit', function(e) {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-        formData.forEach((value, key) => __data[key] = value);
-        nextStep('card_formulaire', 'card_presentation');
-        beforeStart();
-    });
-}
 
 function beforeStart() {
     $('.before_start').on('click', function() {
@@ -98,7 +89,37 @@ function initMenu(step) {
 }
 
 $('document').ready(function() {
-    submitForm();
+
+
+    //Validator
+
+    // configure your validation
+    $("form").validate({
+        rules: {
+            tranche_age: { required: true },
+            frequence_utilisation: { required: true },
+            rgpd: { required: true }
+        },
+        messages: {
+            tranche_age: { required: "Veuillez sélectionner votre tranche d'âge." },
+            frequence_utilisation: { required: "Veuillez sélectionner votre fréquence d'utilisation." },
+            rgpd: { required: "Veuillez accepter les conditions d'utilisations." },
+        },
+        errorPlacement: function(label, element) {
+            if (element[0].type == "checkbox") {
+                label.addClass('errorMsq');
+                label.insertAfter(element.parent());
+            } else {
+                label.insertAfter(element);
+            }
+        },
+        submitHandler: function(form) {
+            const formData = new FormData(e.target);
+            formData.forEach((value, key) => __data[key] = value);
+            nextStep('card_formulaire', 'card_presentation');
+            beforeStart();
+        }
+    });
 })
 
 function createMenu(step = 'etape1', type = 'sidebar', data) {
