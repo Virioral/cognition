@@ -2,8 +2,16 @@ let __data = { 'time': { 'etape1': '', 'etape2': '', 'etape3': '', 'etape4': '',
 let timer = null
 let seconde = 0;
 let minute = 0;
+<<<<<<< HEAD
 let objectToFind = ['Eaux plates', 'Colas', 'poire', 'poire', 'poire', 'poire'];
 let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
+=======
+//let objectToFind = ['Eaux plates', 'poire', 'poire', 'poire', 'poire', 'poire'];
+//let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
+let objectToFind = ['Eaux plates','Thés'];
+let etapes = ['etape1', 'etape2'];
+
+>>>>>>> 80a97a21e4bc9cc9318cce42559613347d19b51a
 
 //save taille ecran + type, position => position aleatoire entre chaque participants 
 
@@ -83,7 +91,12 @@ function displayEnd() {
 }
 
 function initMenu(step) {
-    createMenu(step, 'pulldown', __init_data);
+    var typemenu = 'pulldown';
+    console.log(Array('etape2','etape4','etape6').includes(step));
+    if(Array('etape2','etape4','etape6').includes(step)){
+        typemenu = 'sidebar';
+    }
+    createMenu(step, typemenu, __init_data);
     $('body').on('click', 'a', function() {
         checkclick($(this));
     });
