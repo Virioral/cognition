@@ -2,16 +2,11 @@ let __data = { 'time': { 'etape1': '', 'etape2': '', 'etape3': '', 'etape4': '',
 let timer = null
 let seconde = 0;
 let minute = 0;
-<<<<<<< HEAD
-let objectToFind = ['Eaux plates', 'Colas', 'poire', 'poire', 'poire', 'poire'];
-let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
-=======
 //let objectToFind = ['Eaux plates', 'poire', 'poire', 'poire', 'poire', 'poire'];
 //let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
-let objectToFind = ['Eaux plates','Thés'];
+let objectToFind = ['Eaux plates', 'Thés'];
 let etapes = ['etape1', 'etape2'];
 
->>>>>>> 80a97a21e4bc9cc9318cce42559613347d19b51a
 
 //save taille ecran + type, position => position aleatoire entre chaque participants 
 
@@ -71,7 +66,7 @@ function checkclick(elem) {
         saveTimer(elem.closest("section").attr('class'));
         objectToFind.shift();
         etapes.shift();
-        if ($(objectToFind).empty()) {
+        if ($(objectToFind).length != 0) {
             displayObjectToFind();
             nextStep('etape1', 'card_before_start');
         } else {
@@ -85,15 +80,15 @@ function displayObjectToFind() {
 }
 
 function displayEnd() {
-    $('.etapes2').addClass('d-none');
+    $('.etape2').addClass('d-none');
     $('.end').removeClass('d-none');
     console.log(__data);
 }
 
 function initMenu(step) {
     var typemenu = 'pulldown';
-    console.log(Array('etape2','etape4','etape6').includes(step));
-    if(Array('etape2','etape4','etape6').includes(step)){
+    console.log(Array('etape2', 'etape4', 'etape6').includes(step));
+    if (Array('etape2', 'etape4', 'etape6').includes(step)) {
         typemenu = 'sidebar';
     }
     createMenu(step, typemenu, __init_data);
