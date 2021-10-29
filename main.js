@@ -51,7 +51,7 @@ function initTimer(){
 
 function saveTimer(name){
     console.log("saveTimer = "+ seconde + "secondes" );
-    __data['time'][name]=time;
+    __data['time'][name]=60*minute + seconde;
     clearInterval(timer);
     seconde = 0;
     console.log(__data);
