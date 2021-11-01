@@ -544,5 +544,706 @@ var __init_data = {
             ],
 
         }
+    },
+    "etape3": {
+        "Gros électromenager":{
+            "Lave linge" : [
+                "Lave linge hublot",
+                "Lave linge top",
+                "Lave linge séchant",
+                "Lave linge encastrable",
+                "Lave linge Whirlpool",
+                "Lave linge reconditionné"
+            ],
+            "Lave vaisselle" : [
+                "Lave vaisselle 45 cm",
+                "Lave vaisselle 60 cm",
+                "Lave vaisselle encastrable",
+                "Lave-vaisselle Siemens"
+            ],
+            "REFRIGERATEUR" :[
+                "Réfrigérateur congélateur",
+                "Réfrigérateur américain",
+                "Réfrigérateur multi-portes",
+                "Réfrigérateur encastrable",
+                "Petit réfrigérateur",
+                "Réfrigérateur Samsung",
+                "Réfrigérateur reconditionné"
+            ],
+            "Congelateur" : [
+                "Congélateur armoire",
+                "Congélateur coffre",
+                "Congélateur top",
+                "CAVE A VIN",
+                "Cave à vin vieillissement",
+                "Cave à vin de service",
+                "Cave à vin encastrable",
+                "Cave à vin La Sommelière"
+            ],
+            "FOUR ENCASTRABLE" : [
+                "Four pyrolyse",
+                "Four chaleur tournante",
+                "Mini four",
+                "Four vapeur",
+                "Four Neff"
+            ],
+            "PLAQUE DE CUISSON" : [
+                "Plaque induction",
+                "Plaque de cuisson gaz",
+                "Plaque vitrocéramique",
+                "Plaque avec hotte intégrée",
+                "Plaque induction Sauter"
+            ],
+            "CUISINIERE" : [
+                "Piano de cuisson",
+                "Piano de cuisson Smeg",
+                "Gazinière",
+                "Cuisinière induction",
+                "Cuisinière vitrocéramique",
+                "Cuisinière mixte",
+                "Cuisinière électrique"
+            ]
+        },     
+        "Cuissine cuisson" : {
+            "Robot cuisine" : [
+                "Robot cuiseur",
+                "Robot pâtissier",
+                "Robot multifonction",
+                "Robot Kitchenaid",
+                "Robot Kenwood",
+                "Companion Moulinex",
+                "Magimix Cook Expert",
+                "Mixeur bébé",
+                "Blender",
+                "Blender chauffant",
+                "Hachoir/Mixeur/Batteur",
+                "Accessoire robot cuisine"
+            ],
+            "Barbecue": [
+                "Barbecue Weber",
+                "Barbecue électrique",
+                "Plancha",
+                "Plancha électrique"
+            ],
+            "Expresso broyeur":[
+                "Expresso broyeur Delonghi",
+                "Expresso broyeur Krups",
+                "Expresso"
+            ],
+            "Machine a cafe" : [
+                "Nespresso",
+                "Dolce Gusto",
+                "Senseo",
+                "Tassimo",
+                "Cafetière italienne"
+            ],
+            "Petit dejeuner" :[
+                "Cafetière",
+                "Bouilloire",
+                "Machine à thé - Théière",
+                "Extracteur de jus",
+                "Presse-agrumes",
+                "Grille Pain"
+            ],
+            "Appareil de cuisson" : [
+                "Appareil à fondue",
+                "Appareil à raclette",
+                "Cookeo - Multicuiseur",
+                "Gaufrier - Croque monsieur",
+                "Crêpière",
+                "Friteuse",
+                "Cuiseur vapeur",
+                "Grill viande",
+                "Casserolerie - Autocuiseur"
+            ]
+        },
+        "Beauté Santé" : {
+            "Coiffure" : [
+                "Sèche-cheveux",
+                "Lisseur",
+                "Fer à boucler",
+                "Brosse chauffante - lissante",
+                "Dyson Airwrap"
+            ],
+            "Epilateur": [ 
+                "Epilateur lumière pulsée",
+                "Epilateur électrique",
+                "Tondeuse bikini",
+                "Accessoire épilation"
+            ],
+            "Soin" : [
+                "Brosse nettoyante visage",
+                "Soin du visage",
+                "Manucure - Pédicure",
+                "Thalasso pied",
+                "Miroir"
+            ],
+            "Rasoir électrique": [
+                "Rasoir électrique homme",
+                "Rasoir Philips",
+                "Rasoir Braun",
+                "Accessoire rasoir"
+            ],
+            "Tondeuse": [
+                "Tondeuse barbe",
+                "Tondeuse cheveux",
+                "Tondeuse multi usage",
+                "Tondeuse nez / oreilles"
+            ],
+            "Brosse a dents électrique" :[
+                "Brosse à dents électrique OralB",
+                "Philips Sonicare",
+                "Jet dentaire",
+                "Brossette Oral b"
+            ],
+            "Santé" :[
+                "Electrostimulation",
+                "Appareil anti-cellulite",
+                "Pèse personne",
+                "Thermomètre",
+                "Tensiomètre",
+                "Revitive",
+                "Complément alimentaire"
+            ]
+        },
+        "Maison Entretien" : {
+            "Aspirateur balai/robot" :[
+                "Aspirateur balai Rowenta",
+                "Aspirateur balai Electrolux",
+                "Aspirateur balai Dyson",
+                "Irobot Roomba",
+                "Aspirateur robot Neato",
+                "Robot aspirateur laveur",
+                "Aspirateur Roborock"
+            ],
+            "Aspirateur" : [
+                "Aspirateur Dyson",
+                "Aspirateur sans sac",
+                "Aspirateur avec sac",
+                "Aspirateur vapeur",
+                "Aspirateur de table",
+                "Aspirateur eau et poussière",
+                "Sac aspirateur"
+            ],
+            "Nettoyeur": [
+                "Karcher",
+                "Balai vapeur Black et Decker",
+                "Nettoyeur vapeur",
+                "Nettoyeur de sol",
+                "Balai vapeur",
+                "Nettoyeur vitre",
+                "Nettoyeur haute pression",
+                "Shampouineuse",
+                "Robot laveur de sol"
+            ],
+            "Repassage": [
+                "Centrale vapeur",
+                "Fer à repasser",
+                "Défroisseur vapeur",
+                "Centre de repassage",
+                "Table à repasser",
+                "Housse table à repasser"
+            ],
+            "Couture" : [
+                "Machine à coudre Brother",
+                "Machine à coudre Singer",
+                "Machine à coudre",
+                "Surjeteuse"
+            ],
+            "Barbecue" : [
+                "Barbecue gaz",
+                "Barbecue Weber",
+                "Plancha",
+                "Plancha gaz",
+                "JARDIN - EXTERIEUR",
+                "Chauffage extérieur",
+                "Station météo",
+                "Jardin d'intérieur"
+            ],
+            "Poubelle" : [
+                "Sac poubelle",
+                "CHAUFFAGE",
+                "Chauffage Soufflant",
+                "Chauffage Électrique",
+                "Chauffage Dyson",
+                "Radiateur bain d'huile",
+                "Climatiseur réversible",
+                "Ventilateur",
+                "Climatiseur"
+            ]               
+        },
+        "TV Image Son" : {
+            "Téléviseur" : [
+                "TV Samsung",
+                "TV 8K",
+                "TV 4K UHD",
+                "TV Oled",
+                "TV QLED",
+                "TV 75 pouces",
+                "TV 43 pouces",
+                "Smart TV",
+                "Offre Bouygues TV Samsung",
+                "TV LED",
+                "TV reconditionnée",
+                "Support TV"
+            ],
+            "Videoprojecteur" : [
+                "Mini vidéoprojecteur",
+                "Videoprojecteur 4K",
+                "Videopro. ultra courte focale",
+                "Ecran vidéoprojecteur"
+            ],
+            "Home cinema" : [
+                "Barre de son",
+                "Ampli Home cinema",
+                "Lecteur Blu-ray / 4K",
+                "Enceinte home cinema",
+                "Pack home cinema",
+                "Caisson de basse"
+            ],
+            "HIFI" : [
+                "Devialet",
+                "Focal",
+                "Enceinte colonne",
+                "Enceinte bibliotheque",
+                "Ampli hifi",
+                "Platine Vinyle",
+                "Chaine Hifi",
+                "Connectique"
+            ],
+            "Casque audio" : [
+                "Casque sans fil - Bluetooth",
+                "Casque réduction de bruit",
+                "Casque TV",
+                "Airpods 3",
+                "ÉCOUTEURS",
+                "Ecouteur Bluetooth",
+                "Ecouteur True Wireless"
+            ],
+            "Enceintes" : [
+                "Enceinte Bose",
+                "Enceinte JBL",
+                "Enceinte bluetooth",
+                "Enceinte de soirée"
+            ],
+            "Appareil photo" : [
+                "Appareil photo hybride",
+                "Appareil photo reflex",
+                "Appareil photo bridge",
+                "Appareil photo compact",
+                "Appareil photo Canon",
+                "Appareil photo Sony",
+                "Objectif photo"
+            ]
+        },
+        "Console Gaming" : {
+            "Playstation" : [
+                "PS5",
+                "Accessoire PS5",
+                "Jeux PS5",
+                "PS4",
+                "Accessoire PS4",
+                "Jeux PS4",
+                "Manette PS4",
+                "Carte Playstation",
+                "Abonnement Playstation"
+            ],
+            "PC gamer" : [
+                "Pc fixe gamer",
+                "Pc portable gamer",
+                "Asus ROG",
+                "Acer Predator",
+                "HP Omen",
+                "Lenovo legion"
+            ],
+            "Xbox" : [
+                "Xbox Series X",
+                "Xbox Series S",
+                "Accessoire Xbox",
+                "Jeux Xbox",
+                "Manette Xbox",
+                "Casque Xbox",
+                "Volant Xbox One",
+                "Carte Xbox"
+            ],
+            "Ecran pc gamer" : [
+                "Ecran pc gamer 24 pouces",
+                "Ecran pc gamer 27 pouces",
+                "Ecran pc gamer incurvé",
+                "Ecran pc gamer 144hz",
+                "Ecran pc gamer 4K",
+                "Ecran pc gamer Asus",
+                "Ecran pc gamer Samsung"
+            ],
+            "Nintendo" : [
+                "Nintendo Switch",
+                "Nintendo Switch Oled",
+                "Nintendo Switch Lite",
+                "Pack Nintendo Switch",
+                "Accessoire Switch",
+                "Jeux Switch",
+                "Manette Switch",
+                "Carte Nintendo eShop"
+            ],
+            "Clavier/Souris gamer" : [
+                "Clavier gamer Razer",
+                "Clavier gamer Logitech",
+                "Souris gamer Razer",
+                "Souris gamer Logitech",
+                "Souris gamer Corsair",
+                "Tapis souris gamer" 
+            ]
+        }
+    },
+    "etape4": {
+        "Gros électromenager":{
+            "Lave linge" : [
+                "Lave linge hublot",
+                "Lave linge top",
+                "Lave linge séchant",
+                "Lave linge encastrable",
+                "Lave linge Whirlpool",
+                "Lave linge reconditionné"
+            ],
+            "Lave vaisselle" : [
+                "Lave vaisselle 45 cm",
+                "Lave vaisselle 60 cm",
+                "Lave vaisselle encastrable",
+                "Lave-vaisselle Siemens"
+            ],
+            "REFRIGERATEUR" :[
+                "Réfrigérateur congélateur",
+                "Réfrigérateur américain",
+                "Réfrigérateur multi-portes",
+                "Réfrigérateur encastrable",
+                "Petit réfrigérateur",
+                "Réfrigérateur Samsung",
+                "Réfrigérateur reconditionné"
+            ],
+            "Congelateur" : [
+                "Congélateur armoire",
+                "Congélateur coffre",
+                "Congélateur top",
+                "CAVE A VIN",
+                "Cave à vin vieillissement",
+                "Cave à vin de service",
+                "Cave à vin encastrable",
+                "Cave à vin La Sommelière"
+            ],
+            "FOUR ENCASTRABLE" : [
+                "Four pyrolyse",
+                "Four chaleur tournante",
+                "Mini four",
+                "Four vapeur",
+                "Four Neff"
+            ],
+            "PLAQUE DE CUISSON" : [
+                "Plaque induction",
+                "Plaque de cuisson gaz",
+                "Plaque vitrocéramique",
+                "Plaque avec hotte intégrée",
+                "Plaque induction Sauter"
+            ],
+            "CUISINIERE" : [
+                "Piano de cuisson",
+                "Piano de cuisson Smeg",
+                "Gazinière",
+                "Cuisinière induction",
+                "Cuisinière vitrocéramique",
+                "Cuisinière mixte",
+                "Cuisinière électrique"
+            ]
+        },     
+        "Cuissine cuisson" : {
+            "Robot cuisine" : [
+                "Robot cuiseur",
+                "Robot pâtissier",
+                "Robot multifonction",
+                "Robot Kitchenaid",
+                "Robot Kenwood",
+                "Companion Moulinex",
+                "Magimix Cook Expert",
+                "Mixeur bébé",
+                "Blender",
+                "Blender chauffant",
+                "Hachoir/Mixeur/Batteur",
+                "Accessoire robot cuisine"
+            ],
+            "Barbecue": [
+                "Barbecue Weber",
+                "Barbecue électrique",
+                "Plancha",
+                "Plancha électrique"
+            ],
+            "Expresso broyeur":[
+                "Expresso broyeur Delonghi",
+                "Expresso broyeur Krups",
+                "Expresso"
+            ],
+            "Machine a cafe" : [
+                "Nespresso",
+                "Dolce Gusto",
+                "Senseo",
+                "Tassimo",
+                "Cafetière italienne"
+            ],
+            "Petit dejeuner" :[
+                "Cafetière",
+                "Bouilloire",
+                "Machine à thé - Théière",
+                "Extracteur de jus",
+                "Presse-agrumes",
+                "Grille Pain"
+            ],
+            "Appareil de cuisson" : [
+                "Appareil à fondue",
+                "Appareil à raclette",
+                "Cookeo - Multicuiseur",
+                "Gaufrier - Croque monsieur",
+                "Crêpière",
+                "Friteuse",
+                "Cuiseur vapeur",
+                "Grill viande",
+                "Casserolerie - Autocuiseur"
+            ]
+        },
+        "Beauté Santé" : {
+            "Coiffure" : [
+                "Sèche-cheveux",
+                "Lisseur",
+                "Fer à boucler",
+                "Brosse chauffante - lissante",
+                "Dyson Airwrap"
+            ],
+            "Epilateur": [ 
+                "Epilateur lumière pulsée",
+                "Epilateur électrique",
+                "Tondeuse bikini",
+                "Accessoire épilation"
+            ],
+            "Soin" : [
+                "Brosse nettoyante visage",
+                "Soin du visage",
+                "Manucure - Pédicure",
+                "Thalasso pied",
+                "Miroir"
+            ],
+            "Rasoir électrique": [
+                "Rasoir électrique homme",
+                "Rasoir Philips",
+                "Rasoir Braun",
+                "Accessoire rasoir"
+            ],
+            "Tondeuse": [
+                "Tondeuse barbe",
+                "Tondeuse cheveux",
+                "Tondeuse multi usage",
+                "Tondeuse nez / oreilles"
+            ],
+            "Brosse a dents électrique" :[
+                "Brosse à dents électrique OralB",
+                "Philips Sonicare",
+                "Jet dentaire",
+                "Brossette Oral b"
+            ],
+            "Santé" :[
+                "Electrostimulation",
+                "Appareil anti-cellulite",
+                "Pèse personne",
+                "Thermomètre",
+                "Tensiomètre",
+                "Revitive",
+                "Complément alimentaire"
+            ]
+        },
+        "Maison Entretien" : {
+            "Aspirateur balai/robot" :[
+                "Aspirateur balai Rowenta",
+                "Aspirateur balai Electrolux",
+                "Aspirateur balai Dyson",
+                "Irobot Roomba",
+                "Aspirateur robot Neato",
+                "Robot aspirateur laveur",
+                "Aspirateur Roborock"
+            ],
+            "Aspirateur" : [
+                "Aspirateur Dyson",
+                "Aspirateur sans sac",
+                "Aspirateur avec sac",
+                "Aspirateur vapeur",
+                "Aspirateur de table",
+                "Aspirateur eau et poussière",
+                "Sac aspirateur"
+            ],
+            "Nettoyeur": [
+                "Karcher",
+                "Balai vapeur Black et Decker",
+                "Nettoyeur vapeur",
+                "Nettoyeur de sol",
+                "Balai vapeur",
+                "Nettoyeur vitre",
+                "Nettoyeur haute pression",
+                "Shampouineuse",
+                "Robot laveur de sol"
+            ],
+            "Repassage": [
+                "Centrale vapeur",
+                "Fer à repasser",
+                "Défroisseur vapeur",
+                "Centre de repassage",
+                "Table à repasser",
+                "Housse table à repasser"
+            ],
+            "Couture" : [
+                "Machine à coudre Brother",
+                "Machine à coudre Singer",
+                "Machine à coudre",
+                "Surjeteuse"
+            ],
+            "Barbecue" : [
+                "Barbecue gaz",
+                "Barbecue Weber",
+                "Plancha",
+                "Plancha gaz",
+                "JARDIN - EXTERIEUR",
+                "Chauffage extérieur",
+                "Station météo",
+                "Jardin d'intérieur"
+            ],
+            "Poubelle" : [
+                "Sac poubelle",
+                "CHAUFFAGE",
+                "Chauffage Soufflant",
+                "Chauffage Électrique",
+                "Chauffage Dyson",
+                "Radiateur bain d'huile",
+                "Climatiseur réversible",
+                "Ventilateur",
+                "Climatiseur"
+            ]               
+        },
+        "TV Image Son" : {
+            "Téléviseur" : [
+                "TV Samsung",
+                "TV 8K",
+                "TV 4K UHD",
+                "TV Oled",
+                "TV QLED",
+                "TV 75 pouces",
+                "TV 43 pouces",
+                "Smart TV",
+                "Offre Bouygues TV Samsung",
+                "TV LED",
+                "TV reconditionnée",
+                "Support TV"
+            ],
+            "Videoprojecteur" : [
+                "Mini vidéoprojecteur",
+                "Videoprojecteur 4K",
+                "Videopro. ultra courte focale",
+                "Ecran vidéoprojecteur"
+            ],
+            "Home cinema" : [
+                "Barre de son",
+                "Ampli Home cinema",
+                "Lecteur Blu-ray / 4K",
+                "Enceinte home cinema",
+                "Pack home cinema",
+                "Caisson de basse"
+            ],
+            "HIFI" : [
+                "Devialet",
+                "Focal",
+                "Enceinte colonne",
+                "Enceinte bibliotheque",
+                "Ampli hifi",
+                "Platine Vinyle",
+                "Chaine Hifi",
+                "Connectique"
+            ],
+            "Casque audio" : [
+                "Casque sans fil - Bluetooth",
+                "Casque réduction de bruit",
+                "Casque TV",
+                "Airpods 3",
+                "ÉCOUTEURS",
+                "Ecouteur Bluetooth",
+                "Ecouteur True Wireless"
+            ],
+            "Enceintes" : [
+                "Enceinte Bose",
+                "Enceinte JBL",
+                "Enceinte bluetooth",
+                "Enceinte de soirée"
+            ],
+            "Appareil photo" : [
+                "Appareil photo hybride",
+                "Appareil photo reflex",
+                "Appareil photo bridge",
+                "Appareil photo compact",
+                "Appareil photo Canon",
+                "Appareil photo Sony",
+                "Objectif photo"
+            ]
+        },
+        "Console Gaming" : {
+            "Playstation" : [
+                "PS5",
+                "Accessoire PS5",
+                "Jeux PS5",
+                "PS4",
+                "Accessoire PS4",
+                "Jeux PS4",
+                "Manette PS4",
+                "Carte Playstation",
+                "Abonnement Playstation"
+            ],
+            "PC gamer" : [
+                "Pc fixe gamer",
+                "Pc portable gamer",
+                "Asus ROG",
+                "Acer Predator",
+                "HP Omen",
+                "Lenovo legion"
+            ],
+            "Xbox" : [
+                "Xbox Series X",
+                "Xbox Series S",
+                "Accessoire Xbox",
+                "Jeux Xbox",
+                "Manette Xbox",
+                "Casque Xbox",
+                "Volant Xbox One",
+                "Carte Xbox"
+            ],
+            "Ecran pc gamer" : [
+                "Ecran pc gamer 24 pouces",
+                "Ecran pc gamer 27 pouces",
+                "Ecran pc gamer incurvé",
+                "Ecran pc gamer 144hz",
+                "Ecran pc gamer 4K",
+                "Ecran pc gamer Asus",
+                "Ecran pc gamer Samsung"
+            ],
+            "Nintendo" : [
+                "Nintendo Switch",
+                "Nintendo Switch Oled",
+                "Nintendo Switch Lite",
+                "Pack Nintendo Switch",
+                "Accessoire Switch",
+                "Jeux Switch",
+                "Manette Switch",
+                "Carte Nintendo eShop"
+            ],
+            "Clavier/Souris gamer" : [
+                "Clavier gamer Razer",
+                "Clavier gamer Logitech",
+                "Souris gamer Razer",
+                "Souris gamer Logitech",
+                "Souris gamer Corsair",
+                "Tapis souris gamer" 
+            ]
+        }
     }
 }
+
