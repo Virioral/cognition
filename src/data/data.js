@@ -253,7 +253,7 @@ var __init_data = {
             "Pâtisseries fraîches": [
                 "Entremets",
                 "Tartes",
-                "Gâteaux, cakes et Pains d 'épices",
+                "Gâteaux, cakes et Pains d\'épices",
                 "Brioches et couronnes",
                 "Pâtisseries individuelles",
                 "Verrines, crèmes, mousses",
@@ -844,7 +844,7 @@ var __init_data = {
                 "PS4",
                 "Accessoire PS4",
                 "Jeux PS4",
-                "Manette PS4",
+                "Manettes PS4",
                 "Carte Playstation",
                 "Abonnement Playstation"
             ],
@@ -1194,7 +1194,7 @@ var __init_data = {
                 "PS4",
                 "Accessoire PS4",
                 "Jeux PS4",
-                "Manette PS4",
+                "Manettes PS4",
                 "Carte Playstation",
                 "Abonnement Playstation"
             ],
@@ -1242,6 +1242,656 @@ var __init_data = {
                 "Souris gamer Logitech",
                 "Souris gamer Corsair",
                 "Tapis souris gamer" 
+            ]
+        }
+    },
+    "etape5" : {
+        "Chauffage et Plomberie" : {
+            "Poêle et cheminée" : [
+                "Poêle à bois",
+                "Poêle à granulés",
+                "Cheminée",
+                "Insert cheminée",
+                "Poêle à gaz",
+                "Combustibles et bois de chauffage",
+                "Plaque de protection pour poêle",
+                "Accessoires de cheminée",
+                "Conduit cheminée"
+            ],
+            "Chauffage électrique" : [
+                "Radiateur électrique",
+                "Sèche-serviettes",
+                "Accessoires de radiateurs électriques (thermostat et programmateur)",
+                "Radiateur à eau chaude et accessoires",
+                "Accessoires de sèche-serviettes",
+                "Plancher chauffant électrique et à eau chaude"
+            ],
+            "Chauffe-eau et ballon d'eau chaude" : [
+                "Chauffe-eau et ballon d'eau chaude électrique",
+                "Chauffe-eau électrique instantané",
+                "Chauffe-eau gaz",
+                "Chauffe-eau thermodynamique et accessoires",
+                "Accessoires pour chauffe-eau"
+            ],
+            "Chauffage d'appoint" : [
+                "Poêle à pétrole et accessoires",
+                "Convecteur mobile et panneau rayonnant",
+                "Chauffage d'appoint gaz",
+                "Cheminée électrique",
+                "Combustible pour chauffage",
+                "Radiateur d'appoint",
+                "Radiateur soufflant",
+                "Réglette infrarouge et halogène"
+            ],
+            "Climatiseur et ventilateur" : [
+                "Accessoires de climatiseur",
+                "Ventilateur plafond",
+                "Climatiseur et pompe à chaleur air-air",
+                "Climatiseur mobile",
+                "Ventilateur et brasseur d'air"
+            ],
+            "Traitement de l'air" : [
+                "Aérateur",
+                "Conduit et accessoire",
+                "Déshumidificateur",
+                "Grille d'aération",
+                "Humidificateur",
+                "Purificateur d'air et filtre",
+                "Thermomètre et Station météo",
+                "VMC",
+                "Mesure de la qualité de l'air intérieur"
+            ]
+        },
+        "Jardin et Extérieur" : {
+            "Outil motorisé du jardin" : [
+                "Tondeuse et autoportée",
+                "Coupe-bordure",
+                "Taille haie",
+                "Motobineuse et motoculteur",
+                "Débrousailleuse",
+                "Aspirateur souffleur",
+                "Broyeur de végétaux",
+                "Déneigeuse",
+                "Protection de la personne",
+                "Tronçonneuse, scie et fendeur de bûche",
+            ],
+            "Portail et Grillage" : [
+                "Retour",
+                "Portail, Grillage et Occultation",
+                "Clôture de jardin et accessoires",
+                "Occultant de jardin et accessoires",
+                "Panneau de jardin et accessoires",
+                "Portail",
+                "Accessoires et motorisation de portail",
+                "Pilier, muret et chapeau",
+                "Portillon",
+            ],
+            "Terrasse et Sol Extérieur" : [
+                "Carrelage sol extérieur",
+                "Bordure et accessoires",
+                "Lame de terrasse et accessoires",
+                "Pavé, dalle et pas japonais",
+                "Sable, gravier et galet décoratif",
+                "Gazon artificiel",
+                "Garde corps",
+            ],
+            "Mobilier de Jardin" : [
+                "Salon de jardin",
+                "Table de jardin",
+                "Banc de jardin",
+                "Bain de soleil, balancelle et hamac",
+                "Chaise et fauteuil de jardin",
+                "Coussin, tapis et pouf de jardin",
+                "Entretien et protection",
+                "Salon de jardin pour enfant",
+            ],
+            "Outillage à main" : [
+                "Balai",
+                "Sac à déchet et poubelle de jardin",
+                "Brouette de jardin",
+                "Composteur",
+                "Manche d'outils",
+                "Outil de jardinage pour enfant",
+                "Outil pour couper le bois",
+                "Outil pour cultiver",
+                "Outil pour la taille",
+                "Outil pour le gazon",
+                "Outil pour préparer le sol",
+            ],
+            "Piscine et spa" : [
+                "Piscine autoportante, tubulaire et hors sol",
+                "Spa gonflable et accessoires",
+                "Pompe et chauffage",
+                "Traitement de l'eau de piscine et accessoires",
+                "Jeux et accessoires pour piscine",
+                "Robot de piscine",
+                "Sécurité pour piscine",
+            ]
+        },
+        "Peinture et droguerie" : {
+            "Peinture" : [
+                "Peinture murale de couleur",
+                "Sous couche pour peinture intérieure",
+                "Rénovation",
+                "Peinture à effets",
+                "Peinture blanche",
+                "Colorant",
+                "Peinture cuisine et salle de bain"
+            ],
+            "Droguerie et Ménage" : [
+                "Désinfectant",
+                "Colle",
+                "Insecticide",
+                "Ruban adhésif et scotch"
+            ],
+            "Produit bois Intérieur" : [
+                "Huile bois intérieur",
+                "Vernis bois intérieur",
+                "Vitrificateur",
+                "Décapant bois intérieur",
+                "Imprégnant protecteur",
+                "Restauration et entretien de meuble"
+            ],
+            "Equipements de ménage" : [
+                "Balais, brosse",
+                "Eponge, chiffon et serpillère",
+                "Etendoir à linge et accessoires",
+                "Sac poubelle",
+                "Seau et bassine"
+            ],
+            "Produits d'entretien" : [
+                "Entretien du sol",
+                "Entretien salle de bains",
+                "Entretien spécifique",
+                "Entretien wc et canalisation",
+                "Gros lessivage",
+                "Déodorisant et parfum d'ambiance",
+                "Entretien bois, cuir et métaux",
+                "Entretien cuisine",
+                "Entretien multi-usage"
+            ],
+            "Produit bois Extérieur" : [
+                "Lasure",
+                "Vernis bois extérieur",
+                "Saturateur pour terrasse",
+                "Décapants",
+                "Traitement bois extérieur"
+            ]
+        },
+        "Décoration et luminaire" : {
+            "Luminaire intérieur" : [
+                "Applique murale intérieure",
+                "Douille et accessoires",
+                "Interrupteur et variateur de lampe",
+                "Lampadaire intérieur",
+                "Lampe à poser",
+                "Lustre et suspension",
+                "Plafonnier et dalle lumineuse de plafond",
+                "Abat jour",
+                "Ruban led",
+                "Spots",
+                "Veilleuse et guirlande",
+                "Eclairage garage, cave et chantier",
+                "Luminaire pour enfant",
+                "Eclairage de cuisine et de placard",
+                "Eclairage salle de bain"
+            ],
+            "Rideau et voilage" : [
+                "Brise-bise et vitrage",
+                "Embrasse et broche",
+                "Rideau",
+                "Voilage"
+            ],
+            "Cadre, miroir et sticker" : [
+                "Miroir",
+                "Passe-partout et accessoires encadrement",
+                "Cadre et cadre photo",
+                "Pense bête et pêle-mêle",
+                "Sticker",
+                "Lettre et chiffre",
+                "Toile et affiche"
+            ],
+            "Papier peint et frise" : [
+                "Papier peint",
+                "Colle et décolleur papier peint",
+                "Papier à peindre et toile de verre",
+                "Frise murale"
+            ],
+            "Accessoires à rideaux" : [
+                "Tringle à rideaux à composer",
+                "Embout barre et tringle",
+                "Kit tringle à rideaux",
+                "Rail et câble",
+                "Support de fixation",
+                "Barre pour vitrage",
+                "Autre accessoires"
+            ],
+            "Coussin, plaid et pouf" : [
+                "Coussin et housse",
+                "Coussin de chaise",
+                "Coussin de sol",
+                "Plaid",
+                "Pouf"
+            ]
+        },
+        "Electricité et domotique" : {
+            "Gaine et câble électrique" : [
+                "Appareil de mesure",
+                "Dominos, boîtes de dérivation et autres accessoires de connexions",
+                "Moulure, goulotte et plinthe",
+                "Tube irl et raccord",
+                "Fil électrique, câble et gaine",
+                "Fixation de gaine et câble"
+            ],
+            "Interrupteur et prise" : [
+                "Boîte d'encastrement",
+                "Adaptateur de voyage",
+                "Fiche électrique",
+                "Interrupteur et prise en saillie",
+                "Interrupteur et prise encastrable et composable",
+                "Prise programmable et télécommandée",
+                "Interrupteur et prise étanche",
+                "Interrupteur et prise prêt à poser"
+            ],
+            "Tableau électrique et composant" : [
+                "Module de commande et de protection",
+                "Fusible",
+                "Disjoncteur de branchement",
+                "Disjoncteur, coupe circuit et interrupteur différentiel",
+                "Tableau électrique et coffret de communication",
+                "Gaine technique de logement (gtl)",
+                "Equipement de mise à la terre"
+            ],
+            "Image, son et communication" : [
+                "Télécommande universelle",
+                "Accessoires installation antenne et parabole",
+                "Connectique audio, vidéo et internet",
+                "Réception tv, tnt, satellite, parabole et antenne",
+                "Support tv",
+                "Transmetteur d'image, de son et cpl",
+                "Amplificateur, répartiteur et coupleur",
+                "Accessoires interphone et visiophone"
+            ],
+            "Habitat connecté" : [
+                "Sécurité et alarme connectée",
+                "Bricolage et électroménager connectés",
+                "Interrupteur, prise et détecteur connectés",
+                "Qualité de l'air et eau connectées",
+                "Eclairage et son connecté",
+                "Chauffage et climatisation connectés",
+                "Mesure et économie d'énergie connectées"
+            ],
+            "Motorisation de portail, garage et volet" : [
+                "Accessoires de motorisation",
+                "Motorisation de portail",
+                "Motorisation de volet",
+                "Motorisation porte de garage"
+            ],
+            "Sécurité de la maison" : [
+                "Alarme maison",
+                "Caméra de surveillance",
+                "Détecteur de fumée, de monoxyde de carbone, de gaz",
+                "Détecteur de mouvement"
+            ]
+        },
+        "Animalerie" : {
+            "Aquariophilie et Terrariophilie" : [
+                "Aquarium et meuble",
+                "Entretien et soins aquarium",
+                "Matériel, chauffage, filtres et pompes",
+                "Nourriture poisson",
+                "Terrarium, alimentation et accessoires",
+                "Décoration pour aquarium"
+            ],
+            "Basse-cour" : [
+                "Alimentation basse-cour",
+                "Poulaillier, clapier et accessoires",
+                "Hygiène et Soins basse-cour"
+            ],
+            "Chien" : [
+                "Collier, laisse pour chien",
+                "Hygiène et soin",
+                "Jeux et balle pour chien",
+                "Niche et habitat",
+                "Nourriture pour chien"
+            ],
+            "Chat" : [
+                "Accessoires pour repas",
+                "Arbre à chat , jouet et chatière",
+                "Collier, laisse et harnais pour chat",
+                "Coussin et transport",
+                "Hygiène, soins et litière",
+                "Nourriture pour chat"
+            ],
+            "Oiseau" : [
+                "Alimentation et graine pour oiseau",
+                "Cage, nichoir et cabane oiseau",
+                "Hygiène et soin oiseau"
+            ]
+        }
+    },
+    "etape6" : {
+        "Chauffage et Plomberie" : {
+            "Poêle et cheminée" : [
+                "Poêle à bois",
+                "Poêle à granulés",
+                "Cheminée",
+                "Insert cheminée",
+                "Poêle à gaz",
+                "Combustibles et bois de chauffage",
+                "Plaque de protection pour poêle",
+                "Accessoires de cheminée",
+                "Conduit cheminée"
+            ],
+            "Chauffage électrique" : [
+                "Radiateur électrique",
+                "Sèche-serviettes",
+                "Accessoires de radiateurs électriques (thermostat et programmateur)",
+                "Radiateur à eau chaude et accessoires",
+                "Accessoires de sèche-serviettes",
+                "Plancher chauffant électrique et à eau chaude"
+            ],
+            "Chauffe-eau et ballon d'eau chaude" : [
+                "Chauffe-eau et ballon d'eau chaude électrique",
+                "Chauffe-eau électrique instantané",
+                "Chauffe-eau gaz",
+                "Chauffe-eau thermodynamique et accessoires",
+                "Accessoires pour chauffe-eau"
+            ],
+            "Chauffage d'appoint" : [
+                "Poêle à pétrole et accessoires",
+                "Convecteur mobile et panneau rayonnant",
+                "Chauffage d'appoint gaz",
+                "Cheminée électrique",
+                "Combustible pour chauffage",
+                "Radiateur d'appoint",
+                "Radiateur soufflant",
+                "Réglette infrarouge et halogène"
+            ],
+            "Climatiseur et ventilateur" : [
+                "Accessoires de climatiseur",
+                "Ventilateur plafond",
+                "Climatiseur et pompe à chaleur air-air",
+                "Climatiseur mobile",
+                "Ventilateur et brasseur d'air"
+            ],
+            "Traitement de l'air" : [
+                "Aérateur",
+                "Conduit et accessoire",
+                "Déshumidificateur",
+                "Grille d'aération",
+                "Humidificateur",
+                "Purificateur d'air et filtre",
+                "Thermomètre et Station météo",
+                "VMC",
+                "Mesure de la qualité de l'air intérieur"
+            ]
+        },
+        "Jardin et Extérieur" : {
+            "Outil motorisé du jardin" : [
+                "Tondeuse et autoportée",
+                "Coupe-bordure",
+                "Taille haie",
+                "Motobineuse et motoculteur",
+                "Débrousailleuse",
+                "Aspirateur souffleur",
+                "Broyeur de végétaux",
+                "Déneigeuse",
+                "Protection de la personne",
+                "Tronçonneuse, scie et fendeur de bûche",
+            ],
+            "Portail et Grillage" : [
+                "Retour",
+                "Portail, Grillage et Occultation",
+                "Clôture de jardin et accessoires",
+                "Occultant de jardin et accessoires",
+                "Panneau de jardin et accessoires",
+                "Portail",
+                "Accessoires et motorisation de portail",
+                "Pilier, muret et chapeau",
+                "Portillon",
+            ],
+            "Terrasse et Sol Extérieur" : [
+                "Carrelage sol extérieur",
+                "Bordure et accessoires",
+                "Lame de terrasse et accessoires",
+                "Pavé, dalle et pas japonais",
+                "Sable, gravier et galet décoratif",
+                "Gazon artificiel",
+                "Garde corps",
+            ],
+            "Mobilier de Jardin" : [
+                "Salon de jardin",
+                "Table de jardin",
+                "Banc de jardin",
+                "Bain de soleil, balancelle et hamac",
+                "Chaise et fauteuil de jardin",
+                "Coussin, tapis et pouf de jardin",
+                "Entretien et protection",
+                "Salon de jardin pour enfant",
+            ],
+            "Outillage à main" : [
+                "Balai",
+                "Sac à déchet et poubelle de jardin",
+                "Brouette de jardin",
+                "Composteur",
+                "Manche d'outils",
+                "Outil de jardinage pour enfant",
+                "Outil pour couper le bois",
+                "Outil pour cultiver",
+                "Outil pour la taille",
+                "Outil pour le gazon",
+                "Outil pour préparer le sol",
+            ],
+            "Piscine et spa" : [
+                "Piscine autoportante, tubulaire et hors sol",
+                "Spa gonflable et accessoires",
+                "Pompe et chauffage",
+                "Traitement de l'eau de piscine et accessoires",
+                "Jeux et accessoires pour piscine",
+                "Robot de piscine",
+                "Sécurité pour piscine",
+            ]
+        },
+        "Peinture et droguerie" : {
+            "Peinture" : [
+                "Peinture murale de couleur",
+                "Sous couche pour peinture intérieure",
+                "Rénovation",
+                "Peinture à effets",
+                "Peinture blanche",
+                "Colorant",
+                "Peinture cuisine et salle de bain"
+            ],
+            "Droguerie et Ménage" : [
+                "Désinfectant",
+                "Colle",
+                "Insecticide",
+                "Ruban adhésif et scotch"
+            ],
+            "Produit bois Intérieur" : [
+                "Huile bois intérieur",
+                "Vernis bois intérieur",
+                "Vitrificateur",
+                "Décapant bois intérieur",
+                "Imprégnant protecteur",
+                "Restauration et entretien de meuble"
+            ],
+            "Equipements de ménage" : [
+                "Balais, brosse",
+                "Eponge, chiffon et serpillère",
+                "Etendoir à linge et accessoires",
+                "Sac poubelle",
+                "Seau et bassine"
+            ],
+            "Produits d'entretien" : [
+                "Entretien du sol",
+                "Entretien salle de bains",
+                "Entretien spécifique",
+                "Entretien wc et canalisation",
+                "Gros lessivage",
+                "Déodorisant et parfum d'ambiance",
+                "Entretien bois, cuir et métaux",
+                "Entretien cuisine",
+                "Entretien multi-usage"
+            ],
+            "Produit bois Extérieur" : [
+                "Lasure",
+                "Vernis bois extérieur",
+                "Saturateur pour terrasse",
+                "Décapants",
+                "Traitement bois extérieur"
+            ]
+        },
+        "Décoration et luminaire" : {
+            "Luminaire intérieur" : [
+                "Applique murale intérieure",
+                "Douille et accessoires",
+                "Interrupteur et variateur de lampe",
+                "Lampadaire intérieur",
+                "Lampe à poser",
+                "Lustre et suspension",
+                "Plafonnier et dalle lumineuse de plafond",
+                "Abat jour",
+                "Ruban led",
+                "Spots",
+                "Veilleuse et guirlande",
+                "Eclairage garage, cave et chantier",
+                "Luminaire pour enfant",
+                "Eclairage de cuisine et de placard",
+                "Eclairage salle de bain"
+            ],
+            "Rideau et voilage" : [
+                "Brise-bise et vitrage",
+                "Embrasse et broche",
+                "Rideau",
+                "Voilage"
+            ],
+            "Cadre, miroir et sticker" : [
+                "Miroir",
+                "Passe-partout et accessoires encadrement",
+                "Cadre et cadre photo",
+                "Pense bête et pêle-mêle",
+                "Sticker",
+                "Lettre et chiffre",
+                "Toile et affiche"
+            ],
+            "Papier peint et frise" : [
+                "Papier peint",
+                "Colle et décolleur papier peint",
+                "Papier à peindre et toile de verre",
+                "Frise murale"
+            ],
+            "Accessoires à rideaux" : [
+                "Tringle à rideaux à composer",
+                "Embout barre et tringle",
+                "Kit tringle à rideaux",
+                "Rail et câble",
+                "Support de fixation",
+                "Barre pour vitrage",
+                "Autre accessoires"
+            ],
+            "Coussin, plaid et pouf" : [
+                "Coussin et housse",
+                "Coussin de chaise",
+                "Coussin de sol",
+                "Plaid",
+                "Pouf"
+            ]
+        },
+        "Electricité et domotique" : {
+            "Gaine et câble électrique" : [
+                "Appareil de mesure",
+                "Dominos, boîtes de dérivation et autres accessoires de connexions",
+                "Moulure, goulotte et plinthe",
+                "Tube irl et raccord",
+                "Fil électrique, câble et gaine",
+                "Fixation de gaine et câble"
+            ],
+            "Interrupteur et prise" : [
+                "Boîte d'encastrement",
+                "Adaptateur de voyage",
+                "Fiche électrique",
+                "Interrupteur et prise en saillie",
+                "Interrupteur et prise encastrable et composable",
+                "Prise programmable et télécommandée",
+                "Interrupteur et prise étanche",
+                "Interrupteur et prise prêt à poser"
+            ],
+            "Tableau électrique et composant" : [
+                "Module de commande et de protection",
+                "Fusible",
+                "Disjoncteur de branchement",
+                "Disjoncteur, coupe circuit et interrupteur différentiel",
+                "Tableau électrique et coffret de communication",
+                "Gaine technique de logement (gtl)",
+                "Equipement de mise à la terre"
+            ],
+            "Image, son et communication" : [
+                "Télécommande universelle",
+                "Accessoires installation antenne et parabole",
+                "Connectique audio, vidéo et internet",
+                "Réception tv, tnt, satellite, parabole et antenne",
+                "Support tv",
+                "Transmetteur d'image, de son et cpl",
+                "Amplificateur, répartiteur et coupleur",
+                "Accessoires interphone et visiophone"
+            ],
+            "Habitat connecté" : [
+                "Sécurité et alarme connectée",
+                "Bricolage et électroménager connectés",
+                "Interrupteur, prise et détecteur connectés",
+                "Qualité de l'air et eau connectées",
+                "Eclairage et son connecté",
+                "Chauffage et climatisation connectés",
+                "Mesure et économie d'énergie connectées"
+            ],
+            "Motorisation de portail, garage et volet" : [
+                "Accessoires de motorisation",
+                "Motorisation de portail",
+                "Motorisation de volet",
+                "Motorisation porte de garage"
+            ],
+            "Sécurité de la maison" : [
+                "Alarme maison",
+                "Caméra de surveillance",
+                "Détecteur de fumée, de monoxyde de carbone, de gaz",
+                "Détecteur de mouvement"
+            ]
+        },
+        "Animalerie" : {
+            "Aquariophilie et Terrariophilie" : [
+                "Aquarium et meuble",
+                "Entretien et soins aquarium",
+                "Matériel, chauffage, filtres et pompes",
+                "Nourriture poisson",
+                "Terrarium, alimentation et accessoires",
+                "Décoration pour aquarium"
+            ],
+            "Basse-cour" : [
+                "Alimentation basse-cour",
+                "Poulaillier, clapier et accessoires",
+                "Hygiène et Soins basse-cour"
+            ],
+            "Chien" : [
+                "Collier, laisse pour chien",
+                "Hygiène et soin",
+                "Jeux et balle pour chien",
+                "Niche et habitat",
+                "Nourriture pour chien"
+            ],
+            "Chat" : [
+                "Accessoires pour repas",
+                "Arbre à chat , jouet et chatière",
+                "Collier, laisse et harnais pour chat",
+                "Coussin et transport",
+                "Hygiène, soins et litière",
+                "Nourriture pour chat"
+            ],
+            "Oiseau" : [
+                "Alimentation et graine pour oiseau",
+                "Cage, nichoir et cabane oiseau",
+                "Hygiène et soin oiseau"
             ]
         }
     }

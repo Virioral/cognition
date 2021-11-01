@@ -2,10 +2,9 @@ let __data = { 'time': { 'etape1': 0, 'etape2': 0, 'etape3': 0, 'etape4': 0, 'et
 let timer = null
 let seconde = 0;
 let minute = 0;
-//let objectToFind = ['Eaux plates', 'poire', 'poire', 'poire', 'poire', 'poire'];
-//let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
-let objectToFind = ['Eaux plates','Thés',"Crêpière","Manette PS4"];
-let etapes = ['etape1', 'etape2','etape3','etape4'];
+let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
+let objectToFind = ['Pains','Thés',"Crêpière","Manettes PS4","Jeux et balle pour chien","Climatiseur mobile"];
+
 
 
 //save taille ecran + type, position => position aleatoire entre chaque participants 
@@ -26,6 +25,12 @@ function startGame() {
         minute = 0;
         initMenu(etapes[0]);
         $('.timer').removeClass('d-none');
+        if(objectToFind[0].length > 10){
+            $('.Obj').css("height",60);
+        }
+        else{
+            $('.Obj').css("height",30);
+        }
         $('.Obj').removeClass('d-none');
         initTimer();
     })
@@ -78,6 +83,7 @@ function displayObjectToFind() {
 function displayEnd(oldstep) {
     $('.' + oldstep).addClass('d-none');
     $('.timer').addClass('d-none');
+    $('.Obj').addClass('d-none');
     $('.end').removeClass('d-none');
     for( var elem in __data.time){
         var quotient = 0;
@@ -107,8 +113,7 @@ function initMenu(step) {
 }
 
 $('document').ready(function() {
-
-
+    
     //Validator
 
     // configure your validation
