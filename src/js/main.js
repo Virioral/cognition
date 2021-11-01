@@ -1,11 +1,11 @@
-let __data = { 'time': { 'etape1': '', 'etape2': '', 'etape3': '', 'etape4': '', 'etape5': '', 'etape6': '', 'global': '' } };
+let __data = { 'time': { 'etape1': 0, 'etape2': 0, 'etape3': 0, 'etape4': 0, 'etape5': 0, 'etape6': 0, 'global': 0 } };
 let timer = null
 let seconde = 0;
 let minute = 0;
 //let objectToFind = ['Eaux plates', 'poire', 'poire', 'poire', 'poire', 'poire'];
 //let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
 let objectToFind = ['Eaux plates','Thés',"Crêpière","Manette PS4"];
-let etapes = ['etape1', 'etape2','etape3','étape4'];
+let etapes = ['etape1', 'etape2','etape3','etape4'];
 
 
 //save taille ecran + type, position => position aleatoire entre chaque participants 
@@ -21,10 +21,12 @@ function beforeStart() {
 
 function startGame() {
     $('.start_game').on('click', function() {
-        console.log(etapes[0]);
         nextStep('card_before_start', etapes[0]);
         seconde = 0;
+        minute = 0;
         initMenu(etapes[0]);
+        $('.timer').removeClass('d-none');
+        $('.Obj').removeClass('d-none');
         initTimer();
     })
 }
@@ -48,6 +50,7 @@ function initTimer() {
 
 function saveTimer(name) {
     __data['time'][name] = 60 * minute + seconde;
+    __data['time']['global'] = __data['time']['global'] + (60 * minute + seconde);
     clearInterval(timer);
     seconde = 0;
 }
@@ -56,12 +59,14 @@ function checkclick(elem) {
     if (objectToFind[0] == elem.text()) {
         saveTimer(elem.closest("section").attr('class'));
         objectToFind.shift();
-        etapes.shift();
+        var oldstep = etapes.shift();
         if ($(objectToFind).length != 0) {
             displayObjectToFind();
-            nextStep('etape1', 'card_before_start');
+            $('.timer').addClass('d-none');
+            $('.Obj').addClass('d-none');
+            nextStep(oldstep, 'card_before_start');
         } else {
-            displayEnd();
+            displayEnd(oldstep);
         }
     }
 }
@@ -70,15 +75,28 @@ function displayObjectToFind() {
     $('.objectToFind').text(objectToFind[0])
 }
 
-function displayEnd() {
-    $('.etape2').addClass('d-none');
+function displayEnd(oldstep) {
+    $('.' + oldstep).addClass('d-none');
+    $('.timer').addClass('d-none');
     $('.end').removeClass('d-none');
+    for( var elem in __data.time){
+        var quotient = 0;
+        var remainder = 0;
+        if(__data.time[elem]>59){
+            var quotient = Math.floor(__data.time[elem]/60);
+            var remainder = __data.time[elem] % 60;
+            $('.score_'+ elem ).text(quotient + ' minutes ' + remainder + ' seconde');
+
+        }
+        else{
+            $('.score_'+ elem ).text(__data.time[elem] + ' seconde');
+        }
+    }
     console.log(__data);
 }
 
 function initMenu(step) {
     var typemenu = 'pulldown';
-    console.log(Array('etape2', 'etape4', 'etape6').includes(step));
     if (Array('etape2', 'etape4', 'etape6').includes(step)) {
         typemenu = 'sidebar';
     }
@@ -124,7 +142,6 @@ $('document').ready(function() {
 
 function createMenu(step = 'etape1', type = 'sidebar', data) {
     let str = '';
-    console.log(data);
     for (let cat in data[step]) {
         let caretIcon = (type == 'sidebar') ? '<i class="fas fa-caret-right"></i>' : '<i class="fas fa-caret-down"></i>';
         str += `<li><a href="#">${cat+caretIcon}</a><ul>`;
