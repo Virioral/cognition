@@ -4,8 +4,8 @@ let seconde = 0;
 let minute = 0;
 //let objectToFind = ['Eaux plates', 'poire', 'poire', 'poire', 'poire', 'poire'];
 //let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
-let objectToFind = ['Eaux plates', 'Thés'];
-let etapes = ['etape1', 'etape2'];
+let objectToFind = ['Eaux plates','Thés',"Crêpière","Manette PS4"];
+let etapes = ['etape1', 'etape2','etape3','étape4'];
 
 
 //save taille ecran + type, position => position aleatoire entre chaque participants 
@@ -113,8 +113,8 @@ $('document').ready(function() {
                 label.insertAfter(element);
             }
         },
-        submitHandler: function(form) {
-            const formData = new FormData(e.target);
+        submitHandler: function(form) {            
+            const formData = new FormData(form);            
             formData.forEach((value, key) => __data[key] = value);
             nextStep('card_formulaire', 'card_presentation');
             beforeStart();
