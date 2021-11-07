@@ -147,12 +147,23 @@ $('document').ready(function() {
 
 function createMenu(step = 'etape1', type = 'sidebar', data) {
     let str = '';
-    for (let cat in data[step]) {
+    var title = Object.keys(data[step]);
+    var title = title.sort(sortRandom);  
+    for (let cat of title) {
+        let id = cat.replaceAll(' ','');  
         let caretIcon = (type == 'sidebar') ? '<i class="fas fa-caret-right"></i>' : '<i class="fas fa-caret-down"></i>';
-        str += `<li><a href="#">${cat+caretIcon}</a><ul>`;
-        for (let subcat in data[step][cat]) {
+        str += `<li><a id=${id} href="#">${cat+caretIcon}</a><ul>`;
+
+        var cate = Object.keys(data[step][cat]);
+        var cate = cate.sort(sortRandom);  
+
+        for (let subcat of cate) {
             str += `<li><a href="#">${subcat}  <i class="fas fa-caret-right"></i></a><ul>`;
-            for (let index in data[step][cat][subcat]) {
+
+            var obj = Object.keys(data[step][cat][subcat]);
+            var obj = obj.sort(sortRandom);  
+
+            for (let index of obj) {
                 let article = data[step][cat][subcat][index];
                 str += `<li><a href="#">${article}</a></li>`;
             }
@@ -166,5 +177,26 @@ function createMenu(step = 'etape1', type = 'sidebar', data) {
     } else {
         $(`.${step}`).append(`<nav class="navbar navbar-light bg-light nav-dropdown"><ul>${str}</ul></nav>`);
     }
-
+    replaceTextByPng(title,step);
 }
+
+function replaceTextByPng(title,step){
+    console.log(title);
+    for (let picto of title){
+        picto = picto.replaceAll(' ','');
+        if(Array('etape3', 'etape4').includes(step)){
+            let oldtext = $('#' + picto).text();
+            $('#' + picto).replaceWith('<a href="#"><img src='+__init_picto[picto] +'>'+ oldtext +'</a>');
+        }
+        else if(Array('etape5', 'etape6').includes(step)){
+            $('#' + picto).replaceWith('<a href="#"><img src='+__init_picto[picto] +'></a>');
+        }
+    }
+}
+
+
+
+function sortRandom(a, b) {  
+  return 0.5 - Math.random();
+}  
+
