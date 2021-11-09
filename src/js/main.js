@@ -25,11 +25,6 @@ function startGame() {
         minute = 0;
         initMenu(etapes[0]);
         $('.timer,.Obj').removeClass('d-none');
-        // if (objectToFind[0].length > 10) {
-        //     $('.Obj').css("height", 60);
-        // } else {
-        //     $('.Obj').css("height", 30);
-        // }
         initTimer();
     })
 }
@@ -82,7 +77,7 @@ function displayEnd(oldstep) {
     $('.' + oldstep).addClass('d-none');
     $('.timer').addClass('d-none');
     $('.Obj').addClass('d-none');
-    $('.end').removeClass('d-none');
+    $('.card_end').removeClass('d-none');
     for (var elem in __data.time) {
         var quotient = 0;
         var remainder = 0;

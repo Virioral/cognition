@@ -32,10 +32,35 @@ section[class^='etape'] a {
     text-decoration: none;
     background-color: #f8f9fa;
     width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+section[class^='etape'] .nav-dropdown a {
+    justify-content: space-around;
+    border-right: 1px black solid;
+}
+
+section[class^='etape'] .sidebar a,
+section.etape5 .sidebar a {
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+}
+
+section[class^='etape'] ul ul a {
+    justify-content: space-between !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid black !important;
 }
 
 section[class^='etape'] a:hover {
     background-color: darkgray;
+}
+
+section[class^='etape'] img {
+    height: 30px;
+    width: 30px;
 }
 
 form .error {
