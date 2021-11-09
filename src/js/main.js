@@ -107,7 +107,7 @@ function initMenu(step) {
 $('document').ready(function() {
 
     //Validator
-
+    checkWidthScreen();
     // configure your validation
     $("form").validate({
         rules: {
@@ -184,4 +184,11 @@ function createMenu(step = 'etape1', type = 'sidebar', data) {
 
 function sortRandom(a, b) {
     return 0.5 - Math.random();
+}
+
+function checkWidthScreen() {
+    if ($(window).width() < 1200) {
+        alert('Votre taille d\'écran n\'est pas suffisante pour effectuer l\'expérience, veuillez agrandir votre fenêtre ou changer d\'appareil si cela n\'est pas possible.')
+        $('.card_formulaire').addClass('d-none');
+    }
 }
