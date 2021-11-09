@@ -18,6 +18,18 @@ body {
     padding: 1em 0;
 }
 
+.form-check{
+    margin-right: 10px;
+}
+
+h5.card_title {
+    margin-bottom: 10px;
+}
+
+h3.objectToFind{
+    margin-bottom: 30px;
+}
+
 .card .card-body {
     text-align: center;
 }

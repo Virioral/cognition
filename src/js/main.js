@@ -3,11 +3,9 @@ let timer = null
 let seconde = 0;
 let minute = 0;
 let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
-let objectToFind = ['Pains', 'Thés', "Crêpière", "Manettes PS4", "Jeux et balle pour chien", "Climatiseur mobile"];
+let objectToFind = ['Pains', 'Thés', "Crêpière", "Manette PS4", "Jeux et balle pour chien", "Climatiseur mobile"];
 
-
-
-//save taille ecran + type, position => position aleatoire entre chaque participants 
+//save taille ecran + type
 
 
 function beforeStart() {
@@ -25,11 +23,6 @@ function startGame() {
         minute = 0;
         initMenu(etapes[0]);
         $('.timer,.Obj').removeClass('d-none');
-        // if (objectToFind[0].length > 10) {
-        //     $('.Obj').css("height", 60);
-        // } else {
-        //     $('.Obj').css("height", 30);
-        // }
         initTimer();
     })
 }
@@ -95,7 +88,7 @@ function displayEnd(oldstep) {
             $('.score_' + elem).text(__data.time[elem] + ' seconde');
         }
     }
-    console.log(__data);
+    savedata(__data);
 }
 
 function initMenu(step) {
@@ -110,7 +103,7 @@ function initMenu(step) {
 }
 
 $('document').ready(function() {
-
+    //etapes = etapes.sort(sortRandom);
     //Validator
 
     // configure your validation
@@ -189,4 +182,20 @@ function createMenu(step = 'etape1', type = 'sidebar', data) {
 
 function sortRandom(a, b) {
     return 0.5 - Math.random();
+}
+
+function savedata(data) {
+
+    // Creating a XHR object
+    let xhr = new XMLHttpRequest();
+    let url = "savedata.php";
+
+    // open a connection
+    xhr.open("POST", url, true);
+
+    // Set the request header i.e. which type of content you are sending
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    // Sending data with the request
+    xhr.send(JSON.stringify(data));
 }
