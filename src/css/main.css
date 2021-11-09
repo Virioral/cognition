@@ -22,18 +22,19 @@ body {
     text-align: center;
 }
 
-a {
+section[class^='etape'] a {
     display: block;
-    padding: 0 10px;
+    padding: 25px 10px;
     color: #000;
     font-size: 16px;
-    line-height: 60px;
+    /*line-height: 60px;*/
+    line-height: 1;
     text-decoration: none;
     background-color: #f8f9fa;
     width: 250px;
 }
 
-a:hover {
+section[class^='etape'] a:hover {
     background-color: darkgray;
 }
 
