@@ -22,7 +22,7 @@ function startGame() {
         seconde = 0;
         minute = 0;
         initMenu(etapes[0]);
-        $('.timer,.Obj').removeClass('d-none');
+        $('.Obj').removeClass('d-none');
         initTimer();
     })
 }
@@ -75,7 +75,7 @@ function displayEnd(oldstep) {
     $('.' + oldstep).addClass('d-none');
     $('.timer').addClass('d-none');
     $('.Obj').addClass('d-none');
-    $('.end').removeClass('d-none');
+    $('.card_end').removeClass('d-none');
     for (var elem in __data.time) {
         var quotient = 0;
         var remainder = 0;
@@ -105,7 +105,7 @@ function initMenu(step) {
 $('document').ready(function() {
     //etapes = etapes.sort(sortRandom);
     //Validator
-
+    checkWidthScreen();
     // configure your validation
     $("form").validate({
         rules: {
@@ -198,4 +198,14 @@ function savedata(data) {
 
     // Sending data with the request
     xhr.send(JSON.stringify(data));
+}
+
+function checkWidthScreen() {
+    let current_width = $(window).width();
+    if (current_width < 1200) {
+        alert('Votre taille d\'écran n\'est pas suffisante pour effectuer l\'expérience, veuillez agrandir votre fenêtre ou changer d\'appareil si cela n\'est pas possible.')
+        $('.card_formulaire').addClass('d-none');
+    } else {
+        __data["taille_ecran"] = current_width;
+    }
 }
