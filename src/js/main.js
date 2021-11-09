@@ -3,7 +3,7 @@ let timer = null
 let seconde = 0;
 let minute = 0;
 let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
-let objectToFind = ['Pains','Thés',"Crêpière","Manettes PS4","Jeux et balle pour chien","Climatiseur mobile"];
+let objectToFind = ['Pains', 'Thés', "Crêpière", "Manettes PS4", "Jeux et balle pour chien", "Climatiseur mobile"];
 
 
 
@@ -25,11 +25,10 @@ function startGame() {
         minute = 0;
         initMenu(etapes[0]);
         $('.timer').removeClass('d-none');
-        if(objectToFind[0].length > 10){
-            $('.Obj').css("height",60);
-        }
-        else{
-            $('.Obj').css("height",30);
+        if (objectToFind[0].length > 10) {
+            $('.Obj').css("height", 60);
+        } else {
+            $('.Obj').css("height", 30);
         }
         $('.Obj').removeClass('d-none');
         initTimer();
@@ -85,17 +84,16 @@ function displayEnd(oldstep) {
     $('.timer').addClass('d-none');
     $('.Obj').addClass('d-none');
     $('.end').removeClass('d-none');
-    for( var elem in __data.time){
+    for (var elem in __data.time) {
         var quotient = 0;
         var remainder = 0;
-        if(__data.time[elem]>59){
-            var quotient = Math.floor(__data.time[elem]/60);
+        if (__data.time[elem] > 59) {
+            var quotient = Math.floor(__data.time[elem] / 60);
             var remainder = __data.time[elem] % 60;
-            $('.score_'+ elem ).text(quotient + ' minutes ' + remainder + ' seconde');
+            $('.score_' + elem).text(quotient + ' minutes ' + remainder + ' seconde');
 
-        }
-        else{
-            $('.score_'+ elem ).text(__data.time[elem] + ' seconde');
+        } else {
+            $('.score_' + elem).text(__data.time[elem] + ' seconde');
         }
     }
     console.log(__data);
@@ -113,7 +111,7 @@ function initMenu(step) {
 }
 
 $('document').ready(function() {
-    
+
     //Validator
 
     // configure your validation
@@ -136,8 +134,8 @@ $('document').ready(function() {
                 label.insertAfter(element);
             }
         },
-        submitHandler: function(form) {            
-            const formData = new FormData(form);            
+        submitHandler: function(form) {
+            const formData = new FormData(form);
             formData.forEach((value, key) => __data[key] = value);
             nextStep('card_formulaire', 'card_presentation');
             beforeStart();
@@ -148,20 +146,31 @@ $('document').ready(function() {
 function createMenu(step = 'etape1', type = 'sidebar', data) {
     let str = '';
     var title = Object.keys(data[step]);
-    var title = title.sort(sortRandom);  
+    var title = title.sort(sortRandom);
     for (let cat of title) {
-        let id = cat.replaceAll(' ','');  
+        let id = cat.replaceAll(' ', '');
         let caretIcon = (type == 'sidebar') ? '<i class="fas fa-caret-right"></i>' : '<i class="fas fa-caret-down"></i>';
-        str += `<li><a id=${id} href="#">${cat+caretIcon}</a><ul>`;
+
+        let indexPicto = cat.replaceAll(' ', '');
+        let link;
+        if (Array('etape3', 'etape4').includes(step)) {
+            link = `<a href="#"><img src='${__init_picto[indexPicto]}'>${cat+caretIcon}</a>`;
+        } else if (Array('etape5', 'etape6').includes(step)) {
+            link = `<a href="#"><img src='${__init_picto[indexPicto]}'>${caretIcon}</a>`;
+        } else {
+            link = `<a href="#">${cat+caretIcon}</a>`
+        }
+        str += `<li>${link}<ul>`;
+
 
         var cate = Object.keys(data[step][cat]);
-        var cate = cate.sort(sortRandom);  
+        var cate = cate.sort(sortRandom);
 
         for (let subcat of cate) {
             str += `<li><a href="#">${subcat}  <i class="fas fa-caret-right"></i></a><ul>`;
 
             var obj = Object.keys(data[step][cat][subcat]);
-            var obj = obj.sort(sortRandom);  
+            var obj = obj.sort(sortRandom);
 
             for (let index of obj) {
                 let article = data[step][cat][subcat][index];
@@ -177,26 +186,8 @@ function createMenu(step = 'etape1', type = 'sidebar', data) {
     } else {
         $(`.${step}`).append(`<nav class="navbar navbar-light bg-light nav-dropdown"><ul>${str}</ul></nav>`);
     }
-    replaceTextByPng(title,step);
 }
 
-function replaceTextByPng(title,step){
-    console.log(title);
-    for (let picto of title){
-        picto = picto.replaceAll(' ','');
-        if(Array('etape3', 'etape4').includes(step)){
-            let oldtext = $('#' + picto).text();
-            $('#' + picto).replaceWith('<a href="#"><img src='+__init_picto[picto] +'>'+ oldtext +'</a>');
-        }
-        else if(Array('etape5', 'etape6').includes(step)){
-            $('#' + picto).replaceWith('<a href="#"><img src='+__init_picto[picto] +'></a>');
-        }
-    }
+function sortRandom(a, b) {
+    return 0.5 - Math.random();
 }
-
-
-
-function sortRandom(a, b) {  
-  return 0.5 - Math.random();
-}  
-
