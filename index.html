@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class='card card_formulaire p-5 '>
+    <div class='card card_formulaire p-5'>
         <form>
             <div class='d-flex my-2'>
                 <div class="form-check">
@@ -81,15 +81,16 @@
     </div>
 
     <div class='card card_before_start p-5 d-none'>
+        <div class="card-body">
+            <h5 class="card-title">
+                L'élément à trouver sera :
+            </h5>
+            <h3 class="objectToFind">
 
-        <h5 class="card-title">
-            L'élément à trouver sera :
-        </h5>
-        <h3 class="objectToFind">
+            </h3>
 
-        </h3>
-
-        <a href="#" class="start_game btn btn-primary">Commencer</a>
+            <a href="#" class="start_game btn btn-primary">Commencer</a>
+        </div>
     </div>
 
     <section class='etape1 d-none'>
@@ -109,31 +110,31 @@
 
     <div class="Obj d-none">
         <h4 class="objectToFind"></h4>
-    </div>
-    <div class="timer d-none">
-        <span class="minute"> 0 min</span> :
-        <span class="seconde"> 0 s</span>
+        <div class="timer">
+            <span class="minute"> 0 min</span> :
+            <span class="seconde"> 0 s</span>
+        </div>
     </div>
 
-    <div class='card end d-none'>
+    <div class='card card_end d-none'>
         <div class="card-body">
             <h5 class="card-title">
-                Terminé !!
+                Félicitations vous avez terminé !
             </h5>
             <h6>
-                Vos Resultats : 
+                Votre temps global est de <span class="score_global"></span>
             </h6>
 
+            <p>Voici le récapitulatif de vos temps :</p>
             <ul>
-                <li class="score_etape1"></li>
-                <li class="score_etape2"></li>
-                <li class="score_etape3"></li>
-                <li class="score_etape4"></li>
-                <li class="score_etape5"></li>
-                <li class="score_etape6"></li>
-                <li class="score_global"></li>
+                <li>Etape 1 : <span class="score_etape1"></span></li>
+                <li>Etape 2 : <span class="score_etape2"></span></li>
+                <li>Etape 3 : <span class="score_etape3"></span></li>
+                <li>Etape 4 : <span class="score_etape4"></span></li>
+                <li>Etape 5 : <span class="score_etape5"></span></li>
+                <li>Etape 6 : <span class="score_etape6"></span></li>
             </ul>
-            
+
             <a href="#" class="leave btn btn-primary">Quitter</a>
         </div>
     </div>

@@ -24,13 +24,12 @@ function startGame() {
         seconde = 0;
         minute = 0;
         initMenu(etapes[0]);
-        $('.timer').removeClass('d-none');
-        if (objectToFind[0].length > 10) {
-            $('.Obj').css("height", 60);
-        } else {
-            $('.Obj').css("height", 30);
-        }
-        $('.Obj').removeClass('d-none');
+        $('.timer,.Obj').removeClass('d-none');
+        // if (objectToFind[0].length > 10) {
+        //     $('.Obj').css("height", 60);
+        // } else {
+        //     $('.Obj').css("height", 30);
+        // }
         initTimer();
     })
 }
