@@ -14,8 +14,6 @@ let DicoObjectToFind = {
 };
 
 
-//save taille ecran + type
-
 
 function beforeStart() {
     $('.before_start').on('click', function() {
@@ -100,10 +98,10 @@ function displayEnd(oldstep) {
         if (__data.time[elem] > 59) {
             var quotient = Math.floor(__data.time[elem] / 60);
             var remainder = __data.time[elem] % 60;
-            $('.score_' + elem).text(quotient + ' minutes ' + remainder + ' seconde');
+            $('.score_' + elem).text(quotient + (quotient > 1 ? ' minutes ' : ' minute ') + remainder + (remainder > 1 ? ' secondes' : ' seconde'));
 
         } else {
-            $('.score_' + elem).text(__data.time[elem] + ' seconde');
+            $('.score_' + elem).text(__data.time[elem] + ' secondes');
         }
     }
     savedata(__data);
@@ -153,7 +151,7 @@ $('document').ready(function() {
     });
 })
 
-function createMenu(step = 'etape1', type = 'sidebar', data) {
+function createMenu(step, type, data) {
     let str = '';
     var title = Object.keys(data[step]);
     var title = title.sort(sortRandom);
@@ -198,7 +196,7 @@ function createMenu(step = 'etape1', type = 'sidebar', data) {
     }
 }
 
-function sortRandom(a, b) {
+function sortRandom() {
     return 0.5 - Math.random();
 }
 
