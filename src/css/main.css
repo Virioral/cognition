@@ -18,6 +18,10 @@ body {
     padding: 1em 0;
 }
 
+.justify{
+    text-align: justify;
+}
+
 .form-check {
     margin-right: 10px;
 }
