@@ -176,7 +176,7 @@ $('document').ready(function() {
         messages: {
             tranche_age: { required: "Veuillez sélectionner votre tranche d'âge." },
             frequence_utilisation: { required: "Veuillez sélectionner votre fréquence d'utilisation." },
-            rgpd: { required: "Veuillez accepter les conditions d'utilisations." },
+            rgpd: { required: "Veuillez accepter le règlement général de protection des données." },
         },
         errorPlacement: function(label, element) {
             if (element[0].type == "checkbox") {
