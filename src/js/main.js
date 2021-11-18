@@ -58,7 +58,6 @@ function checkclick(elem) {
         var oldstep = etapes.shift();
         if ($(objectToFind).length != 0) {
             displayObjectToFind();
-            $('.timer').addClass('d-none');
             $('.Obj').addClass('d-none');
             nextStep(oldstep, 'card_before_start');
         } else {
@@ -73,7 +72,6 @@ function displayObjectToFind() {
 
 function displayEnd(oldstep) {
     $('.' + oldstep).addClass('d-none');
-    $('.timer').addClass('d-none');
     $('.Obj').addClass('d-none');
     $('.card_end').removeClass('d-none');
     for (var elem in __data.time) {
@@ -188,7 +186,7 @@ function savedata(data) {
 
     // Creating a XHR object
     let xhr = new XMLHttpRequest();
-    let url = "savedata.php";
+    let url = "/m1-miashs-2021-s1/aingu2Sh/savedata.php";
 
     // open a connection
     xhr.open("POST", url, true);
