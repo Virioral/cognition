@@ -3,7 +3,16 @@ let timer = null
 let seconde = 0;
 let minute = 0;
 let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
-let objectToFind = ['Pains', 'Thés', "Crêpière", "Manette PS4", "Jeux et balle pour chien", "Climatiseur mobile"];
+let objectToFind = [];
+let DicoObjectToFind = { 
+    "etape1" : ["Pains","Chips","Huiles","Oeufs","Fûts pression","Crèmes dessert","Thés"],
+    "etape2" : ["Pains","Chips","Huiles","Oeufs","Fûts pression","Crèmes dessert","Thés"],
+    "etape3" : ["Crêpière","Manette PS4","Petit réfrigérateur","Expresso broyeur Krups","Karcher","Table à repasser","TV 8K","Appareil photo bridge","Plancha"],
+    "etape4" : ["Crêpière","Manette PS4","Petit réfrigérateur","Expresso broyeur Krups","Karcher","Table à repasser","TV 8K","Appareil photo bridge","Plancha"],
+    "etape5" : ["Jeux et balle pour chien","Climatiseur mobile","Portail","Salon de jardin","Colle","Interrupteur et prise étanche","Alarme maison","VMC","Robot de piscine"],
+    "etape6" : ["Jeux et balle pour chien","Climatiseur mobile","Portail","Salon de jardin","Colle","Interrupteur et prise étanche","Alarme maison","VMC","Robot de piscine"]
+};
+
 
 //save taille ecran + type
 
@@ -70,6 +79,17 @@ function displayObjectToFind() {
     $('.objectToFind').text(objectToFind[0])
 }
 
+function buildObjectToFind(){
+    for(var etape in DicoObjectToFind){
+        var dicoObj = DicoObjectToFind[etape];
+        var obj = dicoObj[Math.floor(Math.random() * dicoObj.length)];
+        while(objectToFind.includes(obj)){
+            var obj = dicoObj[Math.floor(Math.random() * dicoObj.length)];
+        }
+        objectToFind.push(obj);
+    }
+}
+
 function displayEnd(oldstep) {
     $('.' + oldstep).addClass('d-none');
     $('.Obj').addClass('d-none');
@@ -101,7 +121,7 @@ function initMenu(step) {
 }
 
 $('document').ready(function() {
-    //etapes = etapes.sort(sortRandom);
+    buildObjectToFind();
     //Validator
     checkWidthScreen();
     // configure your validation

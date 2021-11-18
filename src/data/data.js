@@ -758,18 +758,7 @@ var __init_data = {
                 "Chauffage extérieur",
                 "Station météo",
                 "Jardin d'intérieur"
-            ],
-            "Poubelle" : [
-                "Sac poubelle",
-                "CHAUFFAGE",
-                "Chauffage Soufflant",
-                "Chauffage Électrique",
-                "Chauffage Dyson",
-                "Radiateur bain d'huile",
-                "Climatiseur réversible",
-                "Ventilateur",
-                "Climatiseur"
-            ]               
+            ]             
         },
         "TV Image Son" : {
             "Téléviseur" : [
@@ -1107,18 +1096,7 @@ var __init_data = {
                 "Chauffage extérieur",
                 "Station météo",
                 "Jardin d'intérieur"
-            ],
-            "Poubelle" : [
-                "Sac poubelle",
-                "Chauffage",
-                "Chauffage Soufflant",
-                "Chauffage Électrique",
-                "Chauffage Dyson",
-                "Radiateur bain d'huile",
-                "Climatiseur réversible",
-                "Ventilateur",
-                "Climatiseur"
-            ]               
+            ]              
         },
         "TV Image Son" : {
             "Téléviseur" : [
