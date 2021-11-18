@@ -140,29 +140,22 @@ h4.objectToFind {
 }
 
 
-/* Hide Dropdowns by Default */
-
 .nav-dropdown ul ul {
     display: none;
     position: absolute;
     top: 45px;
-    /* the height of the main .nav-dropdown */
 }
 
 .nav-dropdown ul ul ul {
     top: 50px;
-    /* the height of the main .nav-dropdown */
 }
 
 
-/* Display Dropdowns on Hover */
 
 .nav-dropdown ul li:hover>ul {
     display: inherit;
 }
 
-
-/* Fisrt Tier Dropdown */
 
 .nav-dropdown ul ul li {
     width: 250px;
@@ -171,8 +164,6 @@ h4.objectToFind {
     position: relative;
 }
 
-
-/* Second, Third and more Tiers	*/
 
 .nav-dropdown ul ul ul li {
     position: relative;
@@ -200,20 +191,15 @@ h4.objectToFind {
 }
 
 
-/* Hide Dropdowns by Default */
 
 .sidebar ul ul {
     display: none;
-    /* the height of the main .nav-dropdown */
 }
 
 .sidebar ul ul ul {
     top: 50px;
-    /* the height of the main .nav-dropdown */
 }
 
-
-/* Display Dropdowns on Hover */
 
 .sidebar ul li:hover>ul {
     display: flex;
@@ -227,8 +213,6 @@ h4.objectToFind {
 }
 
 
-/* Fisrt Tier Dropdown */
-
 .sidebar ul ul li {
     width: 250px;
     float: none;
@@ -236,8 +220,6 @@ h4.objectToFind {
     position: relative;
 }
 
-
-/* Second, Third and more Tiers	*/
 
 .sidebar ul ul ul li {
     position: relative;
@@ -262,7 +244,6 @@ h4.objectToFind {
     .sidebar ul li:hover>ul {
         left: 200px;
     }
-    /* Fisrt Tier Dropdown */
     .sidebar ul ul li {
         width: 200px;
     }
@@ -289,7 +270,6 @@ h4.objectToFind {
     .sidebar ul li:hover>ul {
         left: 150px;
     }
-    /* Fisrt Tier Dropdown */
     .sidebar ul ul li {
         width: 150px;
     }
@@ -316,7 +296,6 @@ h4.objectToFind {
     .sidebar ul li:hover>ul {
         left: 130px;
     }
-    /* Fisrt Tier Dropdown */
     .sidebar ul ul li {
         width: 130px;
     }
