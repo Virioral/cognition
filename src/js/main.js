@@ -1,3 +1,6 @@
+/**
+ * Global Variables
+ */
 let __data = { 'time': { 'etape1': 0, 'etape2': 0, 'etape3': 0, 'etape4': 0, 'etape5': 0, 'etape6': 0, 'global': 0 } };
 let timer = null
 let seconde = 0;
@@ -13,8 +16,9 @@ let DicoObjectToFind = {
     "etape6" : ["Jeux et balle pour chien","Climatiseur mobile","Portail","Salon de jardin","Colle","Interrupteur et prise étanche","Alarme maison","VMC","Robot de piscine"]
 };
 
-
-
+/**
+ * This function will display the statement of our experience
+ */
 function beforeStart() {
     $('.before_start').on('click', function() {
         nextStep('card_presentation', 'card_before_start');
@@ -23,6 +27,9 @@ function beforeStart() {
     });
 }
 
+/**
+ * This function will initiate the experience
+ */
 function startGame() {
     $('.start_game').on('click', function() {
         nextStep('card_before_start', etapes[0]);
@@ -34,11 +41,21 @@ function startGame() {
     })
 }
 
+/**
+ * This function will hide the old step and show the next one
+ * 
+ * @param {String} oldstep 
+ * @param {String} newstep 
+ */
 function nextStep(oldstep, newstep) {
     $('.' + oldstep).addClass('d-none');
     $('.' + newstep).removeClass('d-none');
 }
 
+
+/**
+ * This function will initiate and reset the timer 
+ */
 function initTimer() {
     timer = setInterval(function() {
         seconde++;
@@ -51,6 +68,11 @@ function initTimer() {
     }, 1000);
 }
 
+/**
+ * This function will save the timer for each step
+ * 
+ * @param {String} name 
+ */
 function saveTimer(name) {
     __data['time'][name] = 60 * minute + seconde;
     __data['time']['global'] = __data['time']['global'] + (60 * minute + seconde);
@@ -58,6 +80,12 @@ function saveTimer(name) {
     seconde = 0;
 }
 
+
+/**
+ * This function will compare the object to find and the data selected by the user. Then it will initiate the next step    
+ * 
+ * @param {Object} elem 
+ */
 function checkclick(elem) {
     if (objectToFind[0] == elem.text()) {
         saveTimer(elem.closest("section").attr('class'));
@@ -73,10 +101,16 @@ function checkclick(elem) {
     }
 }
 
+/**
+ * This function will display in bottom right the object to find
+ */
 function displayObjectToFind() {
     $('.objectToFind').text(objectToFind[0])
 }
 
+/**
+ * This function will create dynamically the list of object to find for each step 
+ */
 function buildObjectToFind(){
     for(var etape in DicoObjectToFind){
         var dicoObj = DicoObjectToFind[etape];
@@ -88,6 +122,11 @@ function buildObjectToFind(){
     }
 }
 
+/**
+ * This function will hide the last step and show the result screen
+ * 
+ * @param {String} oldstep 
+ */
 function displayEnd(oldstep) {
     $('.' + oldstep).addClass('d-none');
     $('.Obj').addClass('d-none');
@@ -107,6 +146,11 @@ function displayEnd(oldstep) {
     savedata(__data);
 }
 
+/**
+ * This function will initiate the creation of the menu with the type and style predefined
+ * 
+ * @param {String} step
+ */
 function initMenu(step) {
     var typemenu = 'pulldown';
     if (Array('etape2', 'etape4', 'etape6').includes(step)) {
@@ -151,6 +195,13 @@ $('document').ready(function() {
     });
 })
 
+/**
+ * This function will automatically generate all the menus and styles with json parameter 'data'
+ * 
+ * @param {String} step 
+ * @param {string} type 
+ * @param {JSON} data 
+ */
 function createMenu(step, type, data) {
     let str = '';
     var title = Object.keys(data[step]);
@@ -196,10 +247,19 @@ function createMenu(step, type, data) {
     }
 }
 
+/**
+ * This function will sort a list randomly
+ * 
+ * @returns integer
+ */
 function sortRandom() {
     return 0.5 - Math.random();
 }
 
+/**
+ * This function will send our data on the server
+ * @param {json} data 
+ */
 function savedata(data) {
 
     // Creating a XHR object
@@ -216,6 +276,10 @@ function savedata(data) {
     xhr.send(JSON.stringify(data));
 }
 
+
+/**
+ * This function will check the width of the user screen and disabled the experience if it didn't respect our chart 
+ */
 function checkWidthScreen() {
     let current_width = $(window).width();
     if (current_width < 1000) {
