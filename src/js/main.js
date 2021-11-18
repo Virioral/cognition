@@ -100,10 +100,10 @@ function displayEnd(oldstep) {
         if (__data.time[elem] > 59) {
             var quotient = Math.floor(__data.time[elem] / 60);
             var remainder = __data.time[elem] % 60;
-            $('.score_' + elem).text(quotient + ' minutes ' + remainder + ' seconde');
+            $('.score_' + elem).text(quotient + quotient > 1 ? 'minutes' : 'minute' + remainder + remainder > 1 ? 'secondes' : 'seconde');
 
         } else {
-            $('.score_' + elem).text(__data.time[elem] + ' seconde');
+            $('.score_' + elem).text(__data.time[elem] + ' secondes');
         }
     }
     savedata(__data);
