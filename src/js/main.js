@@ -220,7 +220,7 @@ function savedata(data) {
 
 function checkWidthScreen() {
     let current_width = $(window).width();
-    if (current_width < 1200) {
+    if (current_width < 1000) {
         alert('Votre taille d\'écran n\'est pas suffisante pour effectuer l\'expérience, veuillez agrandir votre fenêtre ou changer d\'appareil si cela n\'est pas possible.')
         $('.card_formulaire').addClass('d-none');
     } else {

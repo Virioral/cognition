@@ -18,7 +18,7 @@ body {
     padding: 1em 0;
 }
 
-.form-check{
+.form-check {
     margin-right: 10px;
 }
 
@@ -26,7 +26,7 @@ h5.card_title {
     margin-bottom: 10px;
 }
 
-h3.objectToFind{
+h3.objectToFind {
     margin-bottom: 30px;
 }
 
@@ -36,15 +36,15 @@ h3.objectToFind{
 
 section[class^='etape'] a {
     display: block;
-    padding: 25px 10px;
+    padding: 20px 10px;
     color: #000;
     font-size: 16px;
-    /*line-height: 60px;*/
+    /*line-height: 50px;*/
     line-height: 1;
     text-decoration: none;
     background-color: #f8f9fa;
     width: 250px;
-    height: 55px;
+    height: 45px;
     display: flex;
     align-items: center;
 }
@@ -141,12 +141,12 @@ h4.objectToFind {
 .nav-dropdown ul ul {
     display: none;
     position: absolute;
-    top: 55px;
+    top: 45px;
     /* the height of the main .nav-dropdown */
 }
 
 .nav-dropdown ul ul ul {
-    top: 60px;
+    top: 50px;
     /* the height of the main .nav-dropdown */
 }
 
@@ -172,7 +172,7 @@ h4.objectToFind {
 
 .nav-dropdown ul ul ul li {
     position: relative;
-    top: -60px;
+    top: -50px;
     left: 250px;
 }
 
@@ -204,7 +204,7 @@ h4.objectToFind {
 }
 
 .sidebar ul ul ul {
-    top: 60px;
+    top: 50px;
     /* the height of the main .nav-dropdown */
 }
 
@@ -237,6 +237,83 @@ h4.objectToFind {
 
 .sidebar ul ul ul li {
     position: relative;
-    top: -60px;
+    top: -50px;
     left: 250px;
+}
+
+@media screen and (max-width:1500px) {
+    section[class^='etape'] a {
+        font-size: 14px;
+        width: 200px;
+    }
+    .nav-dropdown ul ul li {
+        width: 200px;
+    }
+    .nav-dropdown ul ul ul li {
+        left: 200px;
+    }
+    .sidebar ul ul ul li {
+        left: 200px;
+    }
+    .sidebar ul li:hover>ul {
+        left: 200px;
+    }
+    /* Fisrt Tier Dropdown */
+    .sidebar ul ul li {
+        width: 200px;
+    }
+    section[class^='etape'] img {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    section[class^='etape'] a {
+        font-size: 12px;
+        width: 150px;
+    }
+    .nav-dropdown ul ul li {
+        width: 150px;
+    }
+    .nav-dropdown ul ul ul li {
+        left: 150px;
+    }
+    .sidebar ul ul ul li {
+        left: 150px;
+    }
+    .sidebar ul li:hover>ul {
+        left: 150px;
+    }
+    /* Fisrt Tier Dropdown */
+    .sidebar ul ul li {
+        width: 150px;
+    }
+    section[class^='etape'] img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    section[class^='etape'] a {
+        font-size: 11px;
+        width: 130px;
+    }
+    .nav-dropdown ul ul li {
+        width: 130px;
+    }
+    .nav-dropdown ul ul ul li {
+        left: 130px;
+    }
+    .sidebar ul ul ul li {
+        left: 130px;
+    }
+    .sidebar ul li:hover>ul {
+        left: 130px;
+    }
+    /* Fisrt Tier Dropdown */
+    .sidebar ul ul li {
+        width: 130px;
+    }
 }
