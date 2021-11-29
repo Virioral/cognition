@@ -5,11 +5,12 @@ let __data = {'orderRes' : [], 'res': {'etape1': {'style' : 'T','typemenu':'pull
 let timer = null
 let seconde = 0;
 let minute = 0;
+let mili = 0;
 let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
 let objectToFind = [];
 let DicoObjectToFind = { 
-    "etape1" : ["Pains","Chips","Huiles","Oeufs","Fûts pression","Crèmes dessert","Thés"],
-    "etape2" : ["Pains","Chips","Huiles","Oeufs","Fûts pression","Crèmes dessert","Thés"],
+    "etape1" : ["Pains","Chips","Huiles","Oeufs","Fûts pression","Crèmes desserts","Thés"],
+    "etape2" : ["Pains","Chips","Huiles","Oeufs","Fûts pression","Crèmes desserts","Thés"],
     "etape3" : ["Crêpière","Manette PS4","Petit réfrigérateur","Expresso broyeur Krups","Karcher","Table à repasser","TV 8K","Appareil photo bridge","Plancha"],
     "etape4" : ["Crêpière","Manette PS4","Petit réfrigérateur","Expresso broyeur Krups","Karcher","Table à repasser","TV 8K","Appareil photo bridge","Plancha"],
     "etape5" : ["Jeux et balle pour chien","Climatiseur mobile","Portail","Salon de jardin","Colle","Interrupteur et prise étanche","Alarme maison","VMC","Robot de piscine"],
@@ -59,14 +60,18 @@ function nextStep(oldstep, newstep) {
  */
 function initTimer() {
     timer = setInterval(function() {
-        seconde++;
+        mili++;
+        if (mili == 10) {
+            seconde++;
+            mili = 0;
+        }
         if (seconde == 60) {
             minute++;
             seconde = 0;
         }
         $('.minute').text(minute + ' min');
         $('.seconde').text(seconde + ' s');
-    }, 1000);
+    }, 100);
 }
 
 /**
@@ -75,12 +80,14 @@ function initTimer() {
  * @param {String} name 
  */
 function saveTimer(name) {
-    __data['res'][name]['timer'] = 60 * minute + seconde;
-    __data['res']['global']['timer'] = __data['res']['global']['timer'] + (60 * minute + seconde);
+    __data['res'][name]['timer'] = (60 * minute) + seconde + (mili == 0 ? 0 : mili/10);
+    __data['res']['global']['timer'] = __data['res']['global']['timer'] + ((60 * minute) + seconde + (mili == 0 ? 0 : mili/10));
     __data['res'][name]['etape'] = name; 
     __data['orderRes'].push(__data['res'][name]);
     clearInterval(timer);
     seconde = 0;
+    mili = 0;
+    minute = 0;
 }
 
 
@@ -148,6 +155,7 @@ function displayEnd(oldstep) {
         }
     }
     console.log(__data);
+    __data['timerGlobal'] = __data['res']['global'];
     delete __data['res'];
     savedata(__data);
 }
