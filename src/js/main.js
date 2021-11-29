@@ -152,7 +152,7 @@ function displayEnd(oldstep) {
             $('.score_' + elem).text(__data.res[elem]['timer'].toFixed(1) + ' secondes');
         }
     }
-    __data['timerGlobal'] = __data['res']['global'].toFixed(1);
+    __data['timerGlobal'] = __data['res']['global']['timer'].toFixed(1);
     delete __data['res'];
     savedata(__data);
 }
