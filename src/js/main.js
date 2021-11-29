@@ -36,7 +36,6 @@ function startGame() {
         nextStep('card_before_start', etapes[0]);
         seconde = 0;
         minute = 0;
-        console.log(etapes[0]);
         initMenu(etapes[0]);
         $('.Obj').removeClass('d-none');
         initTimer();
@@ -123,7 +122,6 @@ function displayObjectToFind() {
  */
 function buildObjectToFind(){
     for(var etape in etapes){
-        console.log(etapes[etape]);
         var dicoObj = DicoObjectToFind[etapes[etape]];
         var obj = dicoObj[Math.floor(Math.random() * dicoObj.length)];
         while(objectToFind.includes(obj)){
@@ -146,16 +144,15 @@ function displayEnd(oldstep) {
         var quotient = 0;
         var remainder = 0;
         if (__data.res[elem]['timer'] > 59) {
-            var quotient = Math.floor(__data.res[elem]['timer'] / 60);
-            var remainder = __data.res[elem]['timer'] % 60;
+            var quotient = Math.floor(__data.res[elem]['timer'].toFixed(1) / 60);
+            var remainder = __data.res[elem]['timer'].toFixed(1) % 60;
             $('.score_' + elem).text(quotient + (quotient > 1 ? ' minutes ' : ' minute ') + remainder + (remainder > 1 ? ' secondes' : ' seconde'));
 
         } else {
-            $('.score_' + elem).text(__data.res[elem]['timer'] + ' secondes');
+            $('.score_' + elem).text(__data.res[elem]['timer'].toFixed(1) + ' secondes');
         }
     }
-    console.log(__data);
-    __data['timerGlobal'] = __data['res']['global'];
+    __data['timerGlobal'] = __data['res']['global'].toFixed(1);
     delete __data['res'];
     savedata(__data);
 }
