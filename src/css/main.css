@@ -84,7 +84,9 @@ section[class^='etape'] img {
     margin: auto;
     margin-bottom: 20px;
 }
-
+.ul_score li {
+    text-align: left;
+}
 .sidebar {
     position: fixed;
     bottom: 0;
