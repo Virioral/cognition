@@ -7,6 +7,7 @@ let seconde = 0;
 let minute = 0;
 let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
 let objectToFind = [];
+let typeMenu = ['sidebar','pulldown','sidebar','pulldown','sidebar','pulldown'];
 let DicoObjectToFind = { 
     "etape1" : ["Pains","Chips","Huiles","Oeufs","Fûts pression","Crèmes dessert","Thés"],
     "etape2" : ["Pains","Chips","Huiles","Oeufs","Fûts pression","Crèmes dessert","Thés"],
@@ -35,6 +36,7 @@ function startGame() {
         nextStep('card_before_start', etapes[0]);
         seconde = 0;
         minute = 0;
+        console.log(etapes[0]);
         initMenu(etapes[0]);
         $('.Obj').removeClass('d-none');
         initTimer();
@@ -74,8 +76,8 @@ function initTimer() {
  * @param {String} name 
  */
 function saveTimer(name) {
-    __data['time'][name] = 60 * minute + seconde;
-    __data['time']['global'] = __data['time']['global'] + (60 * minute + seconde);
+    __data['time'][name]['timer'] = 60 * minute + seconde;
+    __data['time']['global']['timer'] = __data['time']['global']['timer'] + (60 * minute + seconde);
     clearInterval(timer);
     seconde = 0;
 }
@@ -112,8 +114,9 @@ function displayObjectToFind() {
  * This function will create dynamically the list of object to find for each step 
  */
 function buildObjectToFind(){
-    for(var etape in DicoObjectToFind){
-        var dicoObj = DicoObjectToFind[etape];
+    for(var etape in etapes){
+        console.log(etapes[etape]);
+        var dicoObj = DicoObjectToFind[etapes[etape]];
         var obj = dicoObj[Math.floor(Math.random() * dicoObj.length)];
         while(objectToFind.includes(obj)){
             var obj = dicoObj[Math.floor(Math.random() * dicoObj.length)];
@@ -143,6 +146,7 @@ function displayEnd(oldstep) {
             $('.score_' + elem).text(__data.time[elem] + ' secondes');
         }
     }
+    console.log(__data);
     savedata(__data);
 }
 
@@ -152,10 +156,11 @@ function displayEnd(oldstep) {
  * @param {String} step
  */
 function initMenu(step) {
-    var typemenu = 'pulldown';
-    if (Array('etape2', 'etape4', 'etape6').includes(step)) {
+    var typemenu = typeMenu.shift();
+    __data['time'][step]['typemanu'] = typemenu;
+    /*if (Array('etape2', 'etape4', 'etape6').includes(step)) {
         typemenu = 'sidebar';
-    }
+    }*/
     createMenu(step, typemenu, __init_data);
     $('body').on('click', 'a', function() {
         checkclick($(this));
@@ -163,7 +168,10 @@ function initMenu(step) {
 }
 
 $('document').ready(function() {
+    typeMenu = typeMenu.sort(sortRandom);
+    etapes = etapes.sort(sortRandom);
     buildObjectToFind();
+
     //Validator
     checkWidthScreen();
     // configure your validation
