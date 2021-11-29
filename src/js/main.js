@@ -1,13 +1,12 @@
 /**
  * Global Variables
  */
-let __data = { 'time': { 'etape1': 0, 'etape2': 0, 'etape3': 0, 'etape4': 0, 'etape5': 0, 'etape6': 0, 'global': 0 } };
+let __data = {'orderRes' : [], 'res': {'etape1': {'style' : 'T','typemenu':'pulldown'}, 'etape2': {'style' : 'T','typemenu':'sidebar'}, 'etape3': {'style' : 'TP','typemenu':'pulldown'}, 'etape4': {'style' : 'TP','typemenu':'sidebar'}, 'etape5': {'style' : 'P','typemenu':'pulldown'}, 'etape6': {'style' : 'P','typemenu':'sidebar'}, 'global': {'timer':0} } };
 let timer = null
 let seconde = 0;
 let minute = 0;
 let etapes = ['etape1', 'etape2', 'etape3', 'etape4', 'etape5', 'etape6'];
 let objectToFind = [];
-let typeMenu = ['sidebar','pulldown','sidebar','pulldown','sidebar','pulldown'];
 let DicoObjectToFind = { 
     "etape1" : ["Pains","Chips","Huiles","Oeufs","Fûts pression","Crèmes dessert","Thés"],
     "etape2" : ["Pains","Chips","Huiles","Oeufs","Fûts pression","Crèmes dessert","Thés"],
@@ -76,8 +75,10 @@ function initTimer() {
  * @param {String} name 
  */
 function saveTimer(name) {
-    __data['time'][name]['timer'] = 60 * minute + seconde;
-    __data['time']['global']['timer'] = __data['time']['global']['timer'] + (60 * minute + seconde);
+    __data['res'][name]['timer'] = 60 * minute + seconde;
+    __data['res']['global']['timer'] = __data['res']['global']['timer'] + (60 * minute + seconde);
+    __data['res'][name]['etape'] = name; 
+    __data['orderRes'].push(__data['res'][name]);
     clearInterval(timer);
     seconde = 0;
 }
@@ -134,19 +135,20 @@ function displayEnd(oldstep) {
     $('.' + oldstep).addClass('d-none');
     $('.Obj').addClass('d-none');
     $('.card_end').removeClass('d-none');
-    for (var elem in __data.time) {
+    for (var elem in __data.res) {
         var quotient = 0;
         var remainder = 0;
-        if (__data.time[elem] > 59) {
-            var quotient = Math.floor(__data.time[elem] / 60);
-            var remainder = __data.time[elem] % 60;
+        if (__data.res[elem]['timer'] > 59) {
+            var quotient = Math.floor(__data.res[elem]['timer'] / 60);
+            var remainder = __data.res[elem]['timer'] % 60;
             $('.score_' + elem).text(quotient + (quotient > 1 ? ' minutes ' : ' minute ') + remainder + (remainder > 1 ? ' secondes' : ' seconde'));
 
         } else {
-            $('.score_' + elem).text(__data.time[elem] + ' secondes');
+            $('.score_' + elem).text(__data.res[elem]['timer'] + ' secondes');
         }
     }
     console.log(__data);
+    delete __data['res'];
     savedata(__data);
 }
 
@@ -156,22 +158,15 @@ function displayEnd(oldstep) {
  * @param {String} step
  */
 function initMenu(step) {
-    var typemenu = typeMenu.shift();
-    __data['time'][step]['typemanu'] = typemenu;
-    /*if (Array('etape2', 'etape4', 'etape6').includes(step)) {
-        typemenu = 'sidebar';
-    }*/
-    createMenu(step, typemenu, __init_data);
+    createMenu(step, __data['res'][step]['typemenu'], __init_data);
     $('body').on('click', 'a', function() {
         checkclick($(this));
     });
 }
 
 $('document').ready(function() {
-    typeMenu = typeMenu.sort(sortRandom);
     etapes = etapes.sort(sortRandom);
     buildObjectToFind();
-
     //Validator
     checkWidthScreen();
     // configure your validation
