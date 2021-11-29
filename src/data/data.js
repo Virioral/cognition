@@ -899,7 +899,7 @@ var __init_data = {
                 "Lave vaisselle encastrable",
                 "Lave-vaisselle Siemens"
             ],
-            "REFRIGERATEUR" :[
+            "Refrigerateur" :[
                 "Réfrigérateur congélateur",
                 "Réfrigérateur américain",
                 "Réfrigérateur multi-portes",
@@ -918,21 +918,21 @@ var __init_data = {
                 "Cave à vin encastrable",
                 "Cave à vin La Sommelière"
             ],
-            "FOUR ENCASTRABLE" : [
+            "Four encastrable" : [
                 "Four pyrolyse",
                 "Four chaleur tournante",
                 "Mini four",
                 "Four vapeur",
                 "Four Neff"
             ],
-            "PLAQUE DE CUISSON" : [
+            "Plaque de cuisson" : [
                 "Plaque induction",
                 "Plaque de cuisson gaz",
                 "Plaque vitrocéramique",
                 "Plaque avec hotte intégrée",
                 "Plaque induction Sauter"
             ],
-            "CUISINIERE" : [
+            "Cuisinière" : [
                 "Piano de cuisson",
                 "Piano de cuisson Smeg",
                 "Gazinière",
